@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+  font-family: "Instrument Sans", sans-serif;
+  font-optical-sizing: auto;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Font sizing and weight */
+  --weight-navbar-links: 500;
+  --weight-title: 500;
+  --weight-subtitle: 500;
+  --weight-paragraph: 400;
+  --weight-card-title: 500;
+  --weight-card-subtitle: 400;
+  --weight-card-paragraph-header: 600;
+  --weight-card-paragraph: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+  cursor: default;
+}
+
+body {
+  background-color: var(--bg-1);
+  --white: #EEEDEB;
+  --black: #111214;
+  --force-text-title: #C9C9C9;
+  --force-text-subtitle: #B1B1B1;
+  --bg-5o: #000000b2;
+
+  --tag-gameplay: #ff6f61;
+  --tag-level: #2196f3;
+  --tag-uiux: #4caf50;
+  --tag-frontend: #ff9800;
+  --tag-backend: #673ab7;
+  --tag-server: #9c27b0;
+  --tag-customer: #e91e63;
+}
+
+body.light {
+  /* Light mode */
+  --bg-1: #EEEDEB;
+  --bg-1b: #e8e8e8;
+  --bg-2: #eeeeee;
+  --bg-3: #d3d3d3;
+  --bg-4: #bebebe;
+
+  --shadow: #bebebe;
+  --shadow-1: #afafaf;
+  --accent-1: #916DB3;
+  --accent-1-a: #A57CCC;
+  --accent-1-b: #230067;
+
+  --text-title: #363636;
+  --text-subtitle: #4E4E4E;
+  --text-paragraph: #4E4E4E;
+  --text-card-title: #FFFCFC;
+  --text-card-paragraph: #4E4E4E;
+}
+
+body.dark {
+  /* Dark mode */
+  --bg-1: #111214;
+  --bg-1b: #171717;
+  --bg-2: #262626;
+  --bg-3: #333333;
+  --bg-4: #4e4e4e;
+
+  --accent-1: #9e6ecc;
+  --accent-1-a: #b37de6;
+  --accent-1-b: #15003f;
+
+  --text-title: #e0e0e0;
+  --text-subtitle: #B1B1B1;
+  --text-paragraph: #bbbbbb;
+  --text-card-title: #d3d3d3;
+  --text-card-paragraph: #B1B1B1;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  transition: background-color 200ms ease;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.flex {
+  display: flex;
+  gap: 5px;
+}
+
+.boxed {
+  width: clamp(100px, 1300px, 90vw);
+  margin: 0 auto;
+}
+
+.wide {
+  width: clamp(200px, 1500px, 90vw);
+  margin: 0 auto;
+}
+
+.spacer-20 {
+  margin-bottom: 20px;
+}
+
+.spacer-40 {
+  margin-bottom: 40px;
+}
+
+.spacer-60 {
+  margin-bottom: 60px;
+}
+
+.spacer-80 {
+  margin-bottom: 80px;
+}
+
+button {
+  font-family: "Instrument-Sans", sans-serif;
+}
+
+h1 {
+  font-size: clamp(28px, 5vw, 40px);
+  color: var(--text-title);
+  font-weight: var(--weight-title);
+  margin-bottom: 4px;
+}
+
+h2 {
+  font-size: clamp(18px, 3.5vw, 32px);
+  font-weight: var(--weight-subtitle);
+  color: var(--text-subtitle);
+}
+
+h3 {
+  font-size: clamp(16px, 3vw, 20px);
+  font-weight: var(--weight-subtitle);
+  color: var(--text-title);
+}
+
+h4 {
+  font-size: clamp(16px, 3vw, 20px);
+  font-weight: var(--weight-card-title);
+  color: var(--text-card-paragraph);
+}
+
+h5 {
+  font-size: clamp(14px, 2.5vw, 16px);
+  font-weight: var(--weight-card-paragraph-header);
+  color: var(--text-title);
+  letter-spacing: 0.2px;
+  margin-bottom: 4px;
+}
+
+h6 {
+  font-size: clamp(14px, 2.5vw, 16px);
+  font-weight: var(--weight-paragraph);
+  color: var(--text-subtitle);
+  letter-spacing: 0.4px;
+}
+
+p {
+  color: var(--text-paragraph);
+  font-weight: var(--weight-paragraph);
+  line-height: 130%;
+}
+
+@media (prefers-reduced-motion) {
+  body {
+    transition: 0s all ease;
+  }
+}
