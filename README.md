@@ -9,15 +9,6 @@ Currently, two official plugins are available:
 
 Keywords for this project:
 - Minimalism
-- Glassmorphism
 - Flat design
-- Easy UX
-- Artistic
+- Technology
 - Bold
-
-
-
-Inspiration:
-- [daginatsuko](https://daginatsuko.com/)
-- [seanhalphin](https://www.seanhalpin.xyz/)
-- Tempo paper tissues

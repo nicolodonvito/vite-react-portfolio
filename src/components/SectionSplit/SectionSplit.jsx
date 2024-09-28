@@ -1,9 +1,9 @@
 import { withTranslation } from "react-i18next";
 import "./SectionSplit.css"
 
-function SectionSplit({ t, title, subtitle, splitLeft, splitRight, splitTitle1, splitTitle2, description, card, isSplitReversed }) {
+function SectionSplit({ t, title, id, subtitle, splitLeft, splitRight, splitTitle1, splitTitle2, description, card, isSplitReversed }) {
 	return (
-		<section className="section-content">
+		<section className="section-content" id={id}>
 			<div className="content boxed">
 				<div>
 					<h1>{t(title)}</h1>

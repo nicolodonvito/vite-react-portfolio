@@ -1,76 +1,113 @@
-.section-centered {
+.section-multi-card.section-centered {
 	position: relative;
 	padding: 40px 0;
 	background-color: var(--bg-3);
 	margin-top: 50px;
 }
 
-.section-centered .centered {
+.section-multi-card.section-centered .centered {
 	display: flex;
 	flex-direction: column;
-	padding: 0px 0;
-	gap: 30px;
+	/* padding: 0px 0; */
+	/* gap: 30px; */
 }
 
-.card-list {
+.section-multi-card .card-list {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
 	gap: 20px;
 }
 
-.card-list a {
+.section-multi-card .card-list a {
 	text-decoration: none;
 }
 
-/* Filter buttons and dropdown */
-.filter-buttons-container {
+.section-multi-card .filter-buttons-container {
 	display: flex;
 	align-items: center;
-	margin: 20px 0 0 0;
+	margin: 20px 0;
 }
 
-.filter-buttons {
+.section-multi-card .scrollable-filter-buttons {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 15px;
+	overflow-x: auto;
+	scrollbar-width: none;
 }
 
-.filter-buttons button {
+.section-multi-card .scrollable-filter-buttons::-webkit-scrollbar {
+	display: none;
+}
+
+/* Filter button styles */
+.section-multi-card .filter-buttons button {
 	display: flex;
 	align-items: center;
 	gap: 10px;
 	padding: 10px 20px;
-	background-color: var(--bg-2);
+	min-width: 157px;
 	color: var(--text-title);
-	border: none;
 	cursor: pointer;
-	transition: background-color 200ms ease;
-	border-radius: 50px;
-	/* Turn buttons into pills */
-	font-size: large;
+	transition: all 200ms ease;
+	border-radius: 16px;
+	background-color: var(--bg-1b);
+	border: 2px solid var(--bg-1);
 }
 
-.filter-buttons button:hover {
-	background-color: var(--bg-4);
+.section-multi-card .filter-buttons button:hover {
+	transition: all 300ms ease;
+	border: 2px solid var(--accent-1-a);
 }
 
-.separator {
+.section-multi-card .filter-buttons button.active {
+	background-color: var(--accent-1);
+	color: var(--white);
+	border: 2px solid var(--accent-1-a);
+}
+
+.section-multi-card .filter-buttons button.active h3 {
+	color: var(--white);
+}
+
+.section-multi-card .separator {
 	width: 2px;
 	height: 25px;
-	background-color: var(--bg-1);
+	background-color: var(--accent-1);
 	align-self: center;
-	/* margin: 0 15px; */
 }
 
-/* Mobile dropdown for filters */
-.filter-dropdown {
-	display: none;
+/* Mobile responsiveness */
+@media (max-width: 800px) {
+	.section-multi-card .scrollable-filter-buttons {
+		/* gap: 10px; */
+		justify-content: center;
+		padding-bottom: 10px;
+		/* border-bottom: 2px solid var(--accent-1); */
+	}
+
+	.section-multi-card .separator {
+		width: 80px;
+		height: 2px;
+	}
+
+	.section-multi-card .filter-buttons button {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		width: 100%;
+		padding: 10px 20px;
+		color: var(--text-title);
+		border: none;
+		cursor: pointer;
+		transition: all 200ms ease;
+		border: 2px solid transparent;
+		text-wrap: nowrap;
+	}
 }
 
-.filter-buttons button svg {
-	transform: translateY(-1.5px);
-}
-
-.buttonCard {
+/* ButtonCard */
+.section-multi-card .buttonCard {
 	display: flex;
 	position: relative;
 	flex-direction: column;
@@ -83,23 +120,23 @@
 	transition: all 200ms ease;
 }
 
-.buttonCard:hover {
+.section-multi-card .buttonCard:hover {
 	transform: translateY(-2px);
 }
 
-.buttonCard .image {
+.section-multi-card .buttonCard .image {
 	width: 100%;
 	height: 240px;
 	filter: brightness(80%);
 }
 
-.buttonCard .image img {
+.section-multi-card .buttonCard .image img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
 
-.buttonCard .icon {
+.section-multi-card .buttonCard .icon {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -115,7 +152,7 @@
 	box-shadow: 0 0 2px var(--black);
 }
 
-.buttonCard .icon img {
+.section-multi-card .buttonCard .icon img {
 	width: 100%;
 	border-radius: 6px;
 	padding: 6px;
@@ -123,7 +160,7 @@
 	object-fit: cover;
 }
 
-.buttonCard .icon span {
+.section-multi-card .buttonCard .icon span {
 	background-color: var(--accent-1);
 	color: var(--black);
 	padding: 4px 0;
@@ -133,7 +170,7 @@
 	font-weight: var(--weight-card-paragraph-header);
 }
 
-.buttonCard .cardDescription {
+.section-multi-card .buttonCard .cardDescription {
 	display: flex;
 	padding: 12px;
 	width: 100%;
@@ -142,7 +179,7 @@
 	backdrop-filter: blur(4px);
 }
 
-.buttonCard .description {
+.section-multi-card .buttonCard .description {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -150,100 +187,61 @@
 	gap: 3px;
 }
 
-.buttonCard .chevron {
+.section-multi-card .buttonCard .chevron {
 	height: 100%;
 	align-self: center;
 	color: var(--accent-1);
 }
 
-.buttonCard .tags {
+.section-multi-card .buttonCard .tags {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 10px;
 	align-items: center;
 }
 
-.tag {
+/* Tags */
+.section-multi-card .tag {
 	padding: 3px 8px;
 	border-radius: 5px;
 	color: var(--black);
 	font-weight: var(--weight-card-paragraph-header);
 }
 
-.tag.gameplay {
+.section-multi-card .tag.gameplay {
 	background-color: var(--tag-gameplay);
 }
 
-.tag.level {
+.section-multi-card .tag.level {
 	background-color: var(--tag-level);
 }
 
-.tag.ui-ux {
+.section-multi-card .tag.ui-ux {
 	background-color: var(--tag-uiux);
 }
 
-.tag.frontend {
+.section-multi-card .tag.frontend {
 	background-color: var(--tag-frontend);
 }
 
-.tag.backend {
+.section-multi-card .tag.backend {
 	background-color: var(--tag-backend);
 }
 
-.tag.server {
+.section-multi-card .tag.server {
 	background-color: var(--tag-server);
 }
 
-.tag.consumer {
+.section-multi-card .tag.consumer {
 	background-color: var(--tag-customer);
 }
 
-@media (max-width: 800px) {
-	.buttonCard {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		overflow: hidden;
-		width: 100%;
-	}
-
-	.card-list {
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
-	}
-
-	.filter-buttons {
-		display: none;
-	}
-
-	.filter-dropdown {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: 20px;
-		width: 100%;
-		padding: 9px 18px;
-		border-radius: 5px;
-		background-color: var(--accent-1);
-	}
-
-	.filter-dropdown select {
-		width: 100%;
-		padding: 9px 18px;
-		border-radius: 5px;
-		border: 1px solid var(--accent-2);
-		background-color: var(--bg-2);
-		color: var(--text-title);
-	}
-}
-
 /* Fade-out and fade-in animations */
-.fade-out {
+.section-multi-card .fade-out {
 	animation: fadeOut 300ms ease forwards;
 }
 
-.fade-in {
+.section-multi-card .fade-in {
 	animation: fadeIn 300ms ease forwards;
 }
 

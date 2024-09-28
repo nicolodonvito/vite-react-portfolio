@@ -8,10 +8,10 @@ function Footer({ t }) {
 			<div className="boxed footer-content">
 				<div className="footer-column">
 					<h4>{t("footer.about")}</h4>
-					<div className="flex">
+					{/* <div className="flex">
 						<p>{t("footer.changelog")}</p>
 						<FiExternalLink />
-					</div>
+					</div> */}
 					<div className="social-icons">
 						<a href="https://github.com/nicolodonvito" target="_blank" rel="noopener noreferrer">GitHub</a>
 						<a href="https://www.linkedin.com/in/nicolo-donvito" target="_blank" rel="noopener noreferrer">LinkedIn</a>

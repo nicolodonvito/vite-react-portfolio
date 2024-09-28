@@ -81,6 +81,7 @@ function Homepage() {
 			<Hero />
 			<SectionSplit
 				title="education.education"
+				id="more"
 				splitLeft
 				splitRight
 				description={educationDescription}
@@ -96,6 +97,7 @@ function Homepage() {
 			/>
 			<SectionMultiCard
 				title="projects.projects"
+				id="projects"
 				// subtitle="projects.subtitle"
 				cards={projectCard}
 				buttonLink="/projects"

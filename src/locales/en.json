@@ -1,2 +1,149 @@
 {
+	"navigation": {
+		"home": "Home",
+		"projects": "Projects",
+		"hire_me": "Let's work together",
+		"dark_mode": "Switch to dark mode",
+		"light_mode": "Switch to light mode",
+		"pages": "Pages",
+		"language": "Language"
+	},
+	"home": {
+		"looking": "I am looking for a job!",
+		"click_to_contact": "Click here to contact me",
+		"greetings": {
+			"good_morning": "Good morning",
+			"good_afternoon": "Good afternoon",
+			"good_evening": "Good evening",
+			"welcome": "Welcome"
+		},
+		"i_am": "My name is",
+		"introduction": "I am a full-stack web developer, web designer, game designer, and last but not least, a PC building enthusiast. I live in Northern Italy, but I would love to explore the world.",
+		"cta_projects": "Take a look at my projects",
+		"cta_more": "Discover more",
+		"misc": {
+			"place_remote": "Remote",
+			"place_milan": "Milan, Italy",
+			"ongoing": "Ongoing"
+		}
+	},
+	"education": {
+		"education": "Education",
+		"description": {
+			"part_1": "When I was still a child, my father brought home one of the first iMacs, and I was immediately curious.",
+			"part_2": "While learning to install games and software, I taught myself English as most resources were in English. Meanwhile, I became the go-to person when people's devices didn’t work.",
+			"part_3": "This passion led me to pursue IT studies at one of the few specialized high schools in this field in my area.",
+			"part_4": "During my last year of school, I started building websites, and later I enrolled in a Game Design course where I gained the skills to bring my game ideas to life."
+		},
+		"cards": {
+			"1": {
+				"edu_title": "Digital Bros Game Academy",
+				"edu_hook": "Professional Game Design Course",
+				"edu_description": "Study of this branch of game development, including Gameplay design, UI/UX, Level design, and storytelling basics"
+			},
+			"2": {
+				"edu_title": "IIS Lagrange",
+				"edu_hook": "Technical Institute specializing in IT",
+				"edu_description": "Study of networks, basic web stack, C, Java, Assembly 8086, PHP, and MySQL, along with some visual scripting basics"
+			}
+		}
+	},
+	"work": {
+		"work": "Work",
+		"description": {
+			"part_1": "Since I started building websites at school, I haven’t stopped.",
+			"part_2": "After earning my Game Design certificate, I enhanced my knowledge of key game engines like Unity, Unreal, and I’m currently using Godot.",
+			"part_3": "One of my flaws is that I work a bit slowly, although this usually results in higher quality work and ultimately greater satisfaction from my clients and team members.",
+			"part_4": "I also design and build custom PCs, having successfully assembled over 10 for myself, friends, and clients."
+		},
+		"cards": {
+			"1": {
+				"work_title": "Full-Stack Web Developer",
+				"work_hook": "Freelance developer and web designer",
+				"work_description": "Frontend and backend programming and design of websites using ReactJS, ExpressJS, and MySQL."
+			}
+		}
+	},
+	"projects": {
+		"projects": "Projects",
+		"subtitle": "Here are all the projects I’ve worked on, including academic and non-academic projects",
+		"type": {
+			"game": "Game",
+			"website": "Website",
+			"pc_build": "PC build",
+			"games": "Games",
+			"websites": "Websites",
+			"pc_builds": "PC builds",
+			"pc_building": "PC building",
+			"show_all": "Show all"
+		},
+		"cards": {
+			"1": {
+				"title": "Tome Keeper",
+				"description": "Cleaning simulator in a haunted library"
+			},
+			"2": {
+				"title": "Monsters Mess",
+				"description": "Match-3 in a dystopian Pokémon world"
+			},
+			"3": {
+				"title": "Astralia",
+				"description": "Melee battle royale in a shrinking world"
+			}
+		}
+	},
+	"footer": {
+		"copyright": "Nicolò Donvito - All rights reserved",
+		"about": "Portfolio v4.0",
+		"changelog": "Change log",
+		"links": "Pages"
+	},
+	"hire_me": {
+		"title": "Let's work together",
+		"subtitle": "I offer various services, including game design, website development, and PC building. Each of my works is treated with love to ensure the best possible quality. If you are looking for a collaborator for rev-share projects, are an employer, or need a website, I would be more than happy to meet you!",
+		"game_subtitle": "Creating engaging indie games through intuitive mechanics and interfaces.",
+		"website_subtitle": "Designing, developing, and publishing websites for individuals and small businesses.",
+		"pc_build_subtitle": "Custom-built desktop computers for every budget and need.",
+		"services": "Services",
+		"services_list": {
+			"gameplay_design": "Gameplay Design",
+			"uiux_design": "UI/UX Design",
+			"accessibility": "Accessibility review",
+			"web_design": "Web Design",
+			"frontend": "Frontend Development",
+			"backend": "Backend Development",
+			"hosting": "Publishing and hosting",
+			"assistance": "Site assistance and unlimited edits",
+			"pc_design": "PC Design",
+			"build": "Assembly",
+			"overclock": "Overclocking"
+		}
+	},
+	"contact_form": {
+		"title": "Contact me",
+		"labels": {
+			"name": "Name",
+			"email": "Email",
+			"service": "Service Type",
+			"message": "Message"
+		},
+		"placeholders": {
+			"name": "Enter your name",
+			"email": "Enter your email",
+			"message": "Enter your message"
+		},
+		"options": {
+			"game": "Game Development",
+			"website": "Website Development",
+			"pc_building": "PC Building"
+		},
+		"button": {
+			"send_message": "Send Message",
+			"sending": "Sending..."
+		},
+		"feedback": {
+			"success": "Message sent successfully!",
+			"failure": "Your message could not be sent, please try again."
+		}
+	}
 }

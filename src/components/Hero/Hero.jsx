@@ -4,6 +4,7 @@ import { withTranslation } from "react-i18next";
 import "./Hero.css";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function Hero({ t }) {
 	const time = new Date().getHours();
@@ -25,7 +26,7 @@ function Hero({ t }) {
 		<div className="hero">
 			<div className="hero-content boxed">
 				<div className="hero-left">
-					<Link to="/contacts" className="pill">
+					<Link to="/work" className="pill">
 						<div className="pill-cta">
 							<div className="icon">
 								<FaCog />
@@ -44,7 +45,17 @@ function Hero({ t }) {
 						<h1>{t("home.i_am")} Nicolò</h1>
 					</div>
 					<p>{t("home.introduction")}</p>
+
+					<div className="cta-buttons">
+						<HashLink smooth to="/#projects" className="btn primary-btn">
+							{t("home.cta_projects")}
+						</HashLink>
+						<HashLink smooth to="/#more" className="btn secondary-btn">
+							{t("home.cta_more")}
+						</HashLink>
+					</div>
 				</div>
+
 				<div className="hero-right">
 					<img src="me.png" alt="" />
 				</div>

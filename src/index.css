@@ -42,17 +42,21 @@ body {
   --tag-backend: #673ab7;
   --tag-server: #9c27b0;
   --tag-customer: #e91e63;
+
+  --success: #27ae60;
+  --failure: #e74c3c;
 }
 
 body.light {
   /* Light mode */
-  --bg-1: #EEEDEB;
+  --bg-1: rgb(238, 237, 235);
   --bg-1b: #e8e8e8;
-  --bg-2: #eeeeee;
-  --bg-3: #d3d3d3;
+  --bg-2: rgb(220, 220, 220);
+  --bg-2o: rgba(220, 220, 220, 0.90);
+  --bg-3: rgb(211, 211, 211);
   --bg-4: #bebebe;
 
-  --shadow: #bebebe;
+  --shadow: rgba(0, 0, 0, 0.15);
   --shadow-1: #afafaf;
   --accent-1: #916DB3;
   --accent-1-a: #A57CCC;
@@ -67,9 +71,10 @@ body.light {
 
 body.dark {
   /* Dark mode */
-  --bg-1: #111214;
-  --bg-1b: #171717;
-  --bg-2: #262626;
+  --bg-1: rgb(26, 26, 26);
+  --bg-1b: rgb(32, 32, 32);
+  --bg-2: rgb(38, 38, 38);
+  --bg-2o: rgba(38, 38, 38, 0.97);
   --bg-3: #333333;
   --bg-4: #4e4e4e;
 
@@ -138,7 +143,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(18px, 3.5vw, 32px);
+  font-size: clamp(20px, 3.5vw, 32px);
   font-weight: var(--weight-subtitle);
   color: var(--text-subtitle);
 }

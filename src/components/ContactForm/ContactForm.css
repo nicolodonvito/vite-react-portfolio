@@ -1,0 +1,125 @@
+/* Container for the form */
+.contact-form-container {
+	background-color: var(--bg-2);
+	border-radius: 8px;
+	box-shadow: 0 0px 8px var(--shadow);
+	padding: 20px;
+}
+
+/* Form title */
+h2 {
+	margin-bottom: 20px;
+}
+
+/* Split form layout */
+.split-form {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+/* Left and right sections */
+.left-section,
+.right-section {
+	flex: 1;
+}
+
+/* Form groups for input fields */
+.form-group {
+	margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+	display: block;
+	font-size: 16px;
+	margin-bottom: 8px;
+	color: var(--text-subtitle);
+}
+
+/* Input fields styling */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+	width: 100%;
+	padding: 10px;
+	border-radius: 4px;
+	border: 2px solid transparent;
+	font-size: 16px;
+	outline: none;
+	box-shadow: none;
+	transition: border-color 0.2s ease-in-out;
+	color: var(--text-subtitle);
+	background-color: var(--bg-1);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+	border-color: var(--accent-1);
+}
+
+/* Textarea for message input */
+textarea {
+	resize: none;
+	height: 150px;
+}
+
+/* Button styling */
+button[type="submit"] {
+	width: 100%;
+	padding: 14px 0;
+	background-color: var(--accent-1);
+	color: var(--white);
+	border: none;
+	border-radius: 4px;
+	font-size: 18px;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+	background-color: var(--accent-1-a);
+}
+
+.loading-spinner {
+	margin-right: 8px;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.feedback-message {
+	margin-top: 10px;
+	font-size: 16px;
+	text-align: center;
+}
+
+.feedback-message.success {
+	color: var(--success);
+}
+
+.feedback-message.failure {
+	color: var(--failure);
+}
+
+@media (max-width: 800px) {
+	.split-form {
+		display: flex;
+		flex-direction: column;
+	}
+}
