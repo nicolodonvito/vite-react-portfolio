@@ -31,15 +31,15 @@ const ContactForm = () => {
 
 		// Real email sending using emailjs
 		emailjs.send(
-			'service_kkhw9ui', // Replace with your EmailJS service ID
-			'template_gq9zoe9', // Replace with your EmailJS template ID
+			'service_kkhw9ui',
+			'template_gq9zoe9',
 			{
 				from_name: formData.name,
 				from_email: formData.email,
-				service_type: formData.service, // Capture the selected service type
+				service_type: formData.service,
 				message: formData.message
 			},
-			'Mx19ujhyRS-X4vh6R' // Replace with your EmailJS public key
+			'Mx19ujhyRS-X4vh6R'
 		)
 			.then((result) => {
 				setFeedback(t('contact_form.feedback.success'));

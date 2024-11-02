@@ -52,6 +52,7 @@ textarea {
 	transition: border-color 0.2s ease-in-out;
 	color: var(--text-subtitle);
 	background-color: var(--bg-1);
+	font-family: 'Instrument-Sans', sans-serif;
 }
 
 input[type="text"]:focus,

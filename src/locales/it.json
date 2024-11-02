@@ -89,12 +89,20 @@
 			"3": {
 				"title": "Astralia",
 				"description": "Battle royale corpo a corpo in un mondo che si rimpicciolisce"
+			},
+			"4": {
+				"title": "Casa Adele",
+				"description": "Casa vacanze a Tremosine sul Garda"
+			},
+			"5": {
+				"title": "Filangeri Milano",
+				"description": "Profumeria Artistica e Pelletteria a Milano"
 			}
 		}
 	},
 	"footer": {
 		"copyright": "Nicolò Donvito - Tutti i diritti sono riservati",
-		"about": "Portfolio v4.0",
+		"about": "Portfolio v4.1",
 		"changelog": "Lista dei cambiamenti",
 		"links": "Pagine"
 	},

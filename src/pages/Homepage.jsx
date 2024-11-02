@@ -48,11 +48,29 @@ function Homepage() {
 
 	const projectCard = [
 		{
+			image: "projects/Filangeri_BG.png",
+			icon: "projects/FilangeriIcon.png",
+			buttonName: "projects.cards.5.title",
+			description: "projects.cards.5.description",
+			// buttonLink: "https://casaadele.com/",
+			type: "projects.type.website",
+			tags: ["Frontend"]
+		},
+		{
+			image: "projects/CasaAdele_BG.png",
+			icon: "projects/CasaAdeleIcon.png",
+			buttonName: "projects.cards.4.title",
+			description: "projects.cards.4.description",
+			buttonLink: "https://casaadele.com/",
+			type: "projects.type.website",
+			tags: ["Frontend"]
+		},
+		{
 			image: "projects/Astralia_BG.png",
 			icon: "projects/AstraliaIcon.png",
 			buttonName: "projects.cards.3.title",
 			description: "projects.cards.3.description",
-			buttonLink: "/projects",
+			buttonLink: "https://docs.google.com/document/d/1_BuYlM4wVRQ-zlkSw1UCKRex1ci1vnG2wlv5RTdCv8I/edit?usp=sharing",
 			type: "projects.type.game",
 			tags: ["UI/UX", "Gameplay"]
 		},
@@ -61,7 +79,7 @@ function Homepage() {
 			icon: "projects/MonstersMessIcon.png",
 			buttonName: "projects.cards.2.title",
 			description: "projects.cards.2.description",
-			buttonLink: "/projects",
+			buttonLink: "https://docs.google.com/document/d/1shtIf0YjyuVf7SkV_J-5BVxPq4NBPLiRH7c4HC_Hgk4/edit?usp=sharing",
 			type: "projects.type.game",
 			tags: ["UI/UX", "Gameplay"]
 		},
@@ -70,7 +88,7 @@ function Homepage() {
 			icon: "projects/TomeKeeperIcon.png",
 			buttonName: "projects.cards.1.title",
 			description: "projects.cards.1.description",
-			buttonLink: "/projects",
+			buttonLink: "https://docs.google.com/document/d/1GCUSwcsbxRGPv06KjOwNpOus3teM1LRgJJTtlRd3Zds/edit?usp=sharing",
 			type: "projects.type.game",
 			tags: ["Level", "UI/UX", "Gameplay"]
 		},
@@ -98,7 +116,6 @@ function Homepage() {
 			<SectionMultiCard
 				title="projects.projects"
 				id="projects"
-				// subtitle="projects.subtitle"
 				cards={projectCard}
 				buttonLink="/projects"
 			/>

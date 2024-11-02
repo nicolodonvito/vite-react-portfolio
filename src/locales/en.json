@@ -89,12 +89,20 @@
 			"3": {
 				"title": "Astralia",
 				"description": "Melee battle royale in a shrinking world"
+			},
+			"4": {
+				"title": "Casa Adele",
+				"description": "Holiday House in Tremosine sul Garda, Italy"
+			},
+			"5": {
+				"title": "Filangeri Milano",
+				"description": "Art perfumery & leather goods in Milan, Italy"
 			}
 		}
 	},
 	"footer": {
 		"copyright": "Nicolò Donvito - All rights reserved",
-		"about": "Portfolio v4.0",
+		"about": "Portfolio v4.1",
 		"changelog": "Change log",
 		"links": "Pages"
 	},
