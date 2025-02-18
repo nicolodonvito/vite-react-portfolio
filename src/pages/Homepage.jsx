@@ -30,7 +30,6 @@ function Homepage() {
 	];
 
 	const workDescription = [
-		// 'work.description.part_1',
 		'work.description.part_2',
 		'work.description.part_3',
 		'work.description.part_4',
@@ -62,6 +61,15 @@ function Homepage() {
 			buttonName: "projects.cards.4.title",
 			description: "projects.cards.4.description",
 			buttonLink: "https://casaadele.com/",
+			type: "projects.type.website",
+			tags: ["Frontend"]
+		},
+		{
+			image: "projects/PulizieA2E_BG.png",
+			icon: "projects/PulizieA2EIcon.png",
+			buttonName: "projects.cards.6.title",
+			description: "projects.cards.6.description",
+			buttonLink: "https://puliziea2e.it/",
 			type: "projects.type.website",
 			tags: ["Frontend"]
 		},

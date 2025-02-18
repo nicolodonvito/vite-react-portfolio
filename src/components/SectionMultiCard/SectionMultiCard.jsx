@@ -66,13 +66,13 @@ function SectionMultiCard({ t, id, title, subtitle, cards }) {
 								<IoGlobeOutline size={24} />
 								<h3>{t("projects.type.websites")}</h3>
 							</button>
-							<button
+							{/* <button
 								onClick={() => handleFilterClick("projects.type.pc_build")}
 								className={filter === "projects.type.pc_build" ? "active" : ""}
 							>
 								<RxDesktop size={24} />
 								<h3>{t("projects.type.pc_builds")}</h3>
-							</button>
+							</button> */}
 						</div>
 					</div>
 				</div>
