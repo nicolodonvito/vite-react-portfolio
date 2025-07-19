@@ -14,6 +14,16 @@
 	width: 60%;
 }
 
+.hero-right img {
+	border-radius: 50%;
+	padding: 0.5rem;
+	border: 2px solid var(--black);
+}
+
+body.dark .hero-right img {
+	border: 2px solid var(--white);
+}
+
 .pill {
 	display: block;
 	width: max-content;
@@ -82,7 +92,7 @@
 }
 
 body.dark .hero img {
-	filter: brightness(85%);
+	/* filter: brightness(85%); */
 }
 
 .hero a {

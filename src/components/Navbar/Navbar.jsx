@@ -88,11 +88,11 @@ function Navbar() {
 							</button>
 							<ul className={`language-dropdown ${isLanguageMenuOpen ? 'active' : ''}`}>
 								<li onClick={() => handleLanguageSelect('en')} className={selectedLanguage === 'en' ? 'active' : ''}>
-									<img src="flags/English.png" alt="English" />
+									<img src="images/English.png" alt="English" />
 									<span>English</span>
 								</li>
 								<li onClick={() => handleLanguageSelect('it')} className={selectedLanguage === 'it' ? 'active' : ''}>
-									<img src="flags/Italian.png" alt="Italian" />
+									<img src="images/Italian.png" alt="Italian" />
 									<span>Italiano</span>
 								</li>
 							</ul>

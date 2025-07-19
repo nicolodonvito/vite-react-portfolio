@@ -57,7 +57,7 @@ function Hero({ t }) {
 				</div>
 
 				<div className="hero-right">
-					<img src="me.png" alt="" />
+					<img src="images/pfp.jpg" alt="" />
 				</div>
 			</div>
 		</div>
