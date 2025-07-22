@@ -47,11 +47,20 @@ function Homepage() {
 
 	const projectCard = [
 		{
+			image: "images/LaMantia_BG.jpg",
+			icon: "images/LaMantiaIcon.png",
+			buttonName: "projects.cards.7.title",
+			description: "projects.cards.7.description",
+			buttonLink: "https://filangeri.com/",
+			type: "projects.type.website",
+			tags: ["Frontend"]
+		},
+		{
 			image: "images/Filangeri_BG.png",
 			icon: "images/FilangeriIcon.png",
 			buttonName: "projects.cards.5.title",
 			description: "projects.cards.5.description",
-			buttonLink: "https://filangeri.com/",
+			buttonLink: "https://web.archive.org/web/20250605115322/https://filangeri.com/",
 			type: "projects.type.website",
 			tags: ["Frontend"]
 		},

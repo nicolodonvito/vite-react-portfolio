@@ -14,10 +14,9 @@
 	width: 60%;
 }
 
-.hero-right img {
-	border-radius: 50%;
-	padding: 0.5rem;
-	border: 2px solid var(--black);
+.hero-right {
+	display: flex;
+	align-items: center;
 }
 
 body.dark .hero-right img {
@@ -89,6 +88,9 @@ body.dark .hero-right img {
 	width: 256px;
 	height: 256px;
 	transition: filter 200ms ease;
+	border-radius: 50%;
+	padding: 0.5rem;
+	border: 2px solid var(--black);
 }
 
 body.dark .hero img {
