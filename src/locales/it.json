@@ -77,6 +77,9 @@
 			"pc_building": "Assemblaggio PC",
 			"show_all": "Mostra tutto"
 		},
+		"wip": {
+			"description": "Questo progetto è attualmente in fase di sviluppo. Si prega di controllare più tardi per ulteriori aggiornamenti."
+		},
 		"cards": {
 			"1": {
 				"title": "Tome Keeper",

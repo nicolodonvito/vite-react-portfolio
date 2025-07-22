@@ -77,6 +77,9 @@
 			"pc_building": "PC building",
 			"show_all": "Show all"
 		},
+        "wip": {
+            "description": "This project is currently under development. Please check back later for more updates."
+        },
 		"cards": {
 			"1": {
 				"title": "Tome Keeper",

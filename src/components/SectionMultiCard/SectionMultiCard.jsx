@@ -2,13 +2,15 @@ import { withTranslation } from "react-i18next";
 import "./SectionMultiCard.css";
 import { Link } from "react-router-dom";
 import { IoChevronForward, IoGameControllerOutline, IoGlobeOutline } from "react-icons/io5";
-import { RxDesktop } from "react-icons/rx";
 import { useState } from "react";
 import { IoIosInfinite } from "react-icons/io";
+import Modal from "../Modal/Modal";
 
 function SectionMultiCard({ t, id, title, subtitle, cards }) {
 	const [filter, setFilter] = useState("");
 	const [fade, setFade] = useState(false);
+	const [showModal, setShowModal] = useState(false);
+	const [modalContent, setModalContent] = useState({ title: "", description: "" });
 
 	const predefinedTagOrder = [
 		"Gameplay",
@@ -66,13 +68,6 @@ function SectionMultiCard({ t, id, title, subtitle, cards }) {
 								<IoGlobeOutline size={24} />
 								<h3>{t("projects.type.websites")}</h3>
 							</button>
-							{/* <button
-								onClick={() => handleFilterClick("projects.type.pc_build")}
-								className={filter === "projects.type.pc_build" ? "active" : ""}
-							>
-								<RxDesktop size={24} />
-								<h3>{t("projects.type.pc_builds")}</h3>
-							</button> */}
 						</div>
 					</div>
 				</div>
@@ -90,8 +85,19 @@ function SectionMultiCard({ t, id, title, subtitle, cards }) {
 								})
 								: [];
 
+							const handleCardClick = (e) => {
+								if (part.modal) {
+									e.preventDefault();
+									setShowModal(true);
+									setModalContent({
+										title: part.modal.title,
+										description: part.modal.description,
+									});
+								}
+							};
+
 							return (
-								<Link to={part.buttonLink} key={index}>
+								<Link to={part.buttonLink} key={index} onClick={handleCardClick}>
 									<div className="buttonCard">
 										<div className="image">
 											<img src={part.image} alt={part.buttonName} />
@@ -124,6 +130,13 @@ function SectionMultiCard({ t, id, title, subtitle, cards }) {
 							);
 						})}
 				</div>
+				<Modal
+					show={showModal}
+					onClose={() => setShowModal()}
+					title={modalContent.title}
+				>
+					<p>{t(modalContent.description)}</p>
+				</Modal>
 			</div>
 		</section>
 	);

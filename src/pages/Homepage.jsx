@@ -51,7 +51,11 @@ function Homepage() {
 			icon: "images/LaMantiaIcon.png",
 			buttonName: "projects.cards.7.title",
 			description: "projects.cards.7.description",
-			buttonLink: "https://filangeri.com/",
+			buttonLink: "#",
+			modal: {
+				title: "projects.cards.7.title",
+				description: "projects.wip.description",
+			},
 			type: "projects.type.website",
 			tags: ["Frontend"]
 		},
