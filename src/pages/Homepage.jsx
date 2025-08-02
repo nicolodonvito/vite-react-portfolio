@@ -1,6 +1,7 @@
 import Hero from "../components/Hero/Hero";
 import SectionMultiCard from "../components/SectionMultiCard/SectionMultiCard";
 import SectionSplit from "../components/SectionSplit/SectionSplit";
+import AnimatedOnScroll from "../components/AnimatedOnScroll/AnimatedOnScroll";
 
 function Homepage() {
 	const educationDescription = [
@@ -118,22 +119,26 @@ function Homepage() {
 	return (
 		<div className="homepage">
 			<Hero />
-			<SectionSplit
-				title="education.education"
-				id="more"
-				splitLeft
-				splitRight
-				description={educationDescription}
-				card={educationCards}
-			/>
-			<SectionSplit
-				title="work.work"
-				splitLeft
-				splitRight
-				isSplitReversed
-				card={workCards}
-				description={workDescription}
-			/>
+			<AnimatedOnScroll>
+				<SectionSplit
+					title="education.education"
+					id="more"
+					splitLeft
+					splitRight
+					description={educationDescription}
+					card={educationCards}
+				/>
+			</AnimatedOnScroll>
+			<AnimatedOnScroll>
+				<SectionSplit
+					title="work.work"
+					splitLeft
+					splitRight
+					isSplitReversed
+					card={workCards}
+					description={workDescription}
+				/>
+			</AnimatedOnScroll>
 			<SectionMultiCard
 				title="projects.projects"
 				id="projects"
