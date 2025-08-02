@@ -1,13 +1,17 @@
 import { useState, useEffect, useRef } from 'react';
 
-export default function useOnScreen(options) {
+export default function useOnScreen({ appearThreshold = 0, disappearThreshold = 0 }) {
   const ref = useRef();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
-      setIsVisible(entry.isIntersecting);
-    }, options);
+      if (entry.intersectionRatio >= appearThreshold) {
+        setIsVisible(true);
+      } else if (entry.intersectionRatio <= disappearThreshold) {
+        setIsVisible(false);
+      }
+    }, { threshold: [disappearThreshold, appearThreshold] });
 
     if (ref.current) {
       observer.observe(ref.current);
@@ -18,7 +22,7 @@ export default function useOnScreen(options) {
         observer.unobserve(ref.current);
       }
     };
-  }, [ref, options]);
+  }, [ref, appearThreshold, disappearThreshold]);
 
   return [ref, isVisible];
 }

@@ -93,9 +93,6 @@ body.dark .hero-right img {
 	border: 2px solid var(--black);
 }
 
-body.dark .hero img {
-	/* filter: brightness(85%); */
-}
 
 .hero a {
 	text-decoration: none;
@@ -144,6 +141,11 @@ body.dark .hero img {
 
 /* Media Queries */
 @media (max-width: 800px) {
+	.hero {
+		min-height: 100svh;
+		padding-bottom: 100px;
+	}
+
 	.hero-content {
 		flex-direction: column-reverse;
 		align-items: center;
