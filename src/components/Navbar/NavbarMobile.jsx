@@ -70,14 +70,14 @@ function NavbarMobile({ theme, toggleTheme, handleLanguageSelect }) {
 										onClick={() => selectLanguage('en')}
 										className={selectedLanguage === 'en' ? 'active' : ''}
 									>
-										<img src="/flags/English.png" alt="English" />
+										<img src="/images/English.png" alt="English" />
 										<span>English</span>
 									</li>
 									<li
 										onClick={() => selectLanguage('it')}
 										className={selectedLanguage === 'it' ? 'active' : ''}
 									>
-										<img src="/flags/Italian.png" alt="Italian" />
+										<img src="/images/Italian.png" alt="Italian" />
 										<span>Italiano</span>
 									</li>
 								</div>

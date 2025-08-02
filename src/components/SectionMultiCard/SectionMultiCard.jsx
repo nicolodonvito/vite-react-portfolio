@@ -6,7 +6,7 @@ import { useState } from "react";
 import { IoIosInfinite } from "react-icons/io";
 import Modal from "../Modal/Modal";
 
-function SectionMultiCard({ t, id, title, subtitle, cards }) {
+function SectionMultiCard({ t, id, title, subtitle, cards, className }) {
 	const [filter, setFilter] = useState("");
 	const [fade, setFade] = useState(false);
 	const [showModal, setShowModal] = useState(false);
@@ -38,7 +38,7 @@ function SectionMultiCard({ t, id, title, subtitle, cards }) {
 	};
 
 	return (
-		<section className="section-multi-card section-centered">
+		<section className={`section-multi-card section-centered ${className}`}>
 			<div className="boxed centered" id={id}>
 				<div className="section-header">
 					<h1>{t(title)}</h1>
