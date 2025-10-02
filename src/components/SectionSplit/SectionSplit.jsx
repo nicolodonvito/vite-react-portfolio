@@ -1,7 +1,9 @@
-import { withTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import "./SectionSplit.css"
 
-function SectionSplit({ t, title, id, subtitle, splitLeft, splitRight, splitTitle1, splitTitle2, description, card, isSplitReversed }) {
+function SectionSplit({ title, id, subtitle, splitLeft, splitRight, splitTitle1, splitTitle2, description, card, isSplitReversed }) {
+	const { t } = useTranslation();
+
 	return (
 		<section className="section-content" id={id}>
 			<div className="content boxed">
@@ -39,4 +41,4 @@ function SectionSplit({ t, title, id, subtitle, splitLeft, splitRight, splitTitl
 	)
 }
 
-export default withTranslation()(SectionSplit);
+export default SectionSplit;

@@ -8,6 +8,12 @@
 		"pages": "Pages",
 		"language": "Language"
 	},
+	"seo": {
+		"homepage_title": "Nicolò Donvito - Full-Stack Developer, Game Designer, PC Builder",
+		"homepage_description": "Portfolio of Nicolò Donvito, a full-stack web developer, game designer, and PC building enthusiast based in Northern Italy.",
+		"hireme_title": "Hire Nicolò Donvito - Web Development, Game Design, PC Building Services",
+		"hireme_description": "Explore services offered by Nicolò Donvito, including custom web development, engaging game design, and bespoke PC building."
+	},
 	"home": {
 		"looking": "I am looking for a job!",
 		"click_to_contact": "Click here to contact me",

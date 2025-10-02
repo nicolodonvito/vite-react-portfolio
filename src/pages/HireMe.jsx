@@ -4,6 +4,7 @@ import SectionSplitAlt from "../components/SectionSplitAlt/SectionSplitAlt";
 import { FaCheckCircle } from "react-icons/fa"; // Example icon library
 import { RxDesktop } from "react-icons/rx";
 import ContactForm from "../components/ContactForm/ContactForm";
+import SeoHead from '../components/SeoHead/SeoHead';
 
 const workCards = [
 	{
@@ -48,6 +49,7 @@ const workCards = [
 export default function Work() {
 	return (
 		<div>
+			<SeoHead titleKey="seo.hireme_title" descriptionKey="seo.hireme_description" />
 			<SectionSplitAlt
 				title="hire_me.title"
 				subtitle="hire_me.subtitle"

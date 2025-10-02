@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FaSpinner } from 'react-icons/fa'; // Import react-icons spinner
 import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
@@ -41,11 +41,11 @@ const ContactForm = () => {
 			},
 			'Mx19ujhyRS-X4vh6R'
 		)
-			.then((result) => {
+			.then(() => {
 				setFeedback(t('contact_form.feedback.success'));
 				setSendStatus("success");
 				setFormData({ name: '', email: '', service: 'game', message: '' });
-			}, (error) => {
+			}, () => {
 				setFeedback(t('contact_form.feedback.failure'));
 				setSendStatus("failure");
 			})

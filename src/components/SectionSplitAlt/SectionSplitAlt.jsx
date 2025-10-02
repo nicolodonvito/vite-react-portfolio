@@ -1,7 +1,9 @@
-import { withTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import "./SectionSplitAlt.css";
 
-function SectionSplitAlt({ t, title, subtitle, workCards }) {
+function SectionSplitAlt({ title, subtitle, workCards }) {
+	const { t } = useTranslation();
+
 	return (
 		<section className="section-alt-content">
 			<div className="content boxed">
@@ -37,4 +39,4 @@ function SectionSplitAlt({ t, title, subtitle, workCards }) {
 	);
 }
 
-export default withTranslation()(SectionSplitAlt);
+export default SectionSplitAlt;

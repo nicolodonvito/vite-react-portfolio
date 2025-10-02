@@ -1,12 +1,14 @@
 import { FaCog } from "react-icons/fa";
 import { IoChevronForward } from "react-icons/io5";
-import { withTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import "./Hero.css";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-function Hero({ t }) {
+function Hero() {
+	const { t } = useTranslation();
+	const { lang } = useParams();
 	const time = new Date().getHours();
 	const [greeting, setGreeting] = useState("");
 
@@ -26,7 +28,7 @@ function Hero({ t }) {
 		<div className="hero">
 			<div className="hero-content boxed">
 				<div className="hero-left">
-					<Link to="/work" className="pill">
+					<Link to={`/${lang}/work`} className="pill">
 						<div className="pill-cta">
 							<div className="icon">
 								<FaCog />
@@ -47,21 +49,21 @@ function Hero({ t }) {
 					<p>{t("home.introduction")}</p>
 
 					<div className="cta-buttons">
-						<HashLink smooth to="/#projects" className="btn primary-btn">
+						<HashLink smooth to={`/${lang}/#projects`} className="btn primary-btn">
 							{t("home.cta_projects")}
 						</HashLink>
-						<HashLink smooth to="/#more" className="btn secondary-btn">
+						<HashLink smooth to={`/${lang}/#more`} className="btn secondary-btn">
 							{t("home.cta_more")}
 						</HashLink>
 					</div>
 				</div>
 
 				<div className="hero-right">
-					<img src="images/pfp.jpg" alt="Nicolò Donvito's profile picture" />
+					<img src="/images/pfp.jpg" alt="Nicolò Donvito's profile picture" />
 				</div>
 			</div>
 		</div>
 	);
 }
 
-export default withTranslation()(Hero);
+export default Hero;

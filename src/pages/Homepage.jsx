@@ -2,7 +2,7 @@ import Hero from "../components/Hero/Hero";
 import SectionMultiCard from "../components/SectionMultiCard/SectionMultiCard";
 import SectionSplit from "../components/SectionSplit/SectionSplit";
 import AnimatedOnScroll from "../components/AnimatedOnScroll/AnimatedOnScroll";
-import { Helmet } from 'react-helmet-async';
+import SeoHead from '../components/SeoHead/SeoHead';
 
 function Homepage() {
 	const educationDescription = [
@@ -49,8 +49,8 @@ function Homepage() {
 
 	const projectCard = [
 		{
-			image: "images/LaMantia_BG.jpg",
-			icon: "images/LaMantiaIcon.png",
+			image: "/images/LaMantia_BG.jpg",
+			icon: "/images/LaMantiaIcon.png",
 			buttonName: "projects.cards.7.title",
 			description: "projects.cards.7.description",
 			buttonLink: "https://lamantialuxuryrooms.com/",
@@ -62,8 +62,8 @@ function Homepage() {
 			tags: ["Frontend", "Backend"]
 		},
 		{
-			image: "images/Filangeri_BG.png",
-			icon: "images/FilangeriIcon.png",
+			image: "/images/Filangeri_BG.png",
+			icon: "/images/FilangeriIcon.png",
 			buttonName: "projects.cards.5.title",
 			description: "projects.cards.5.description",
 			buttonLink: "https://web.archive.org/web/20250605115322/https://filangeri.com/",
@@ -71,8 +71,8 @@ function Homepage() {
 			tags: ["Frontend"]
 		},
 		{
-			image: "images/CasaAdele_BG.png",
-			icon: "images/CasaAdeleIcon.png",
+			image: "/images/CasaAdele_BG.png",
+			icon: "/images/CasaAdeleIcon.png",
 			buttonName: "projects.cards.4.title",
 			description: "projects.cards.4.description",
 			buttonLink: "https://casaadele.com/",
@@ -80,8 +80,8 @@ function Homepage() {
 			tags: ["Frontend"]
 		},
 		{
-			image: "images/PulizieA2E_BG.png",
-			icon: "images/PulizieA2EIcon.png",
+			image: "/images/PulizieA2E_BG.png",
+			icon: "/images/PulizieA2EIcon.png",
 			buttonName: "projects.cards.6.title",
 			description: "projects.cards.6.description",
 			buttonLink: "https://puliziea2e.it/",
@@ -89,8 +89,8 @@ function Homepage() {
 			tags: ["Frontend"]
 		},
 		{
-			image: "images/Astralia_BG.png",
-			icon: "images/AstraliaIcon.png",
+			image: "/images/Astralia_BG.png",
+			icon: "/images/AstraliaIcon.png",
 			buttonName: "projects.cards.3.title",
 			description: "projects.cards.3.description",
 			buttonLink: "https://docs.google.com/document/d/1_BuYlM4wVRQ-zlkSw1UCKRex1ci1vnG2wlv5RTdCv8I/edit?usp=sharing",
@@ -98,8 +98,8 @@ function Homepage() {
 			tags: ["UI/UX", "Gameplay"]
 		},
 		{
-			image: "images/Monsters_Mess_BG.png",
-			icon: "images/MonstersMessIcon.png",
+			image: "/images/Monsters_Mess_BG.png",
+			icon: "/images/MonstersMessIcon.png",
 			buttonName: "projects.cards.2.title",
 			description: "projects.cards.2.description",
 			buttonLink: "https://docs.google.com/document/d/1shtIf0YjyuVf7SkV_J-5BVxPq4NBPLiRH7c4HC_Hgk4/edit?usp=sharing",
@@ -107,8 +107,8 @@ function Homepage() {
 			tags: ["UI/UX", "Gameplay"]
 		},
 		{
-			image: "images/Tome_Keeper_BG.png",
-			icon: "images/TomeKeeperIcon.png",
+			image: "/images/Tome_Keeper_BG.png",
+			icon: "/images/TomeKeeperIcon.png",
 			buttonName: "projects.cards.1.title",
 			description: "projects.cards.1.description",
 			buttonLink: "https://docs.google.com/document/d/1GCUSwcsbxRGPv06KjOwNpOus3teM1LRgJJTtlRd3Zds/edit?usp=sharing",
@@ -119,28 +119,7 @@ function Homepage() {
 
 	return (
 		<div className="homepage">
-			<Helmet>
-				<script type="application/ld+json">
-					{`
-						{
-							"@context": "https://schema.org",
-							"@type": "Person",
-							"name": "Nicolò Donvito",
-							"url": "https://ndonvito.it/",
-							"sameAs": [
-								"https://www.linkedin.com/in/nicolo-donvito",
-								"https://github.com/nicolodonvito"
-							],
-							"alumniOf": "Digital Bros Game Academy",
-							"jobTitle": "Full-Stack Developer",
-							"worksFor": {
-								"@type": "Organization",
-								"name": "Freelance"
-							}
-						}
-					`}
-				</script>
-			</Helmet>
+			<SeoHead titleKey="seo.homepage_title" descriptionKey="seo.homepage_description" />
 			<Hero />
 			<AnimatedOnScroll>
 				<SectionSplit

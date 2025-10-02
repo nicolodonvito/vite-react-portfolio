@@ -1,7 +1,12 @@
-import { withTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import "./Footer.css";
+import { HashLink } from 'react-router-hash-link';
+import { useParams } from 'react-router-dom';
 
-function Footer({ t }) {
+function Footer() {
+	const { t } = useTranslation();
+	const { lang } = useParams();
+
 	return (
 		<footer className="footer">
 			<div className="boxed footer-content">
@@ -17,9 +22,9 @@ function Footer({ t }) {
 				<div className="footer-column">
 					<h4>{t("footer.links")}</h4>
 					<ul>
-						<li><a href="/">{t("navigation.home")}</a></li>
-						<li><a href="/#projects">{t("navigation.projects")}</a></li>
-						<li><a href="/work">{t("navigation.hire_me")}</a></li>
+						<li><HashLink smooth to={`/${lang}/`}>{t("navigation.home")}</HashLink></li>
+						<li><HashLink smooth to={`/${lang}/#projects`}>{t("navigation.projects")}</HashLink></li>
+						<li><HashLink smooth to={`/${lang}/work`}>{t("navigation.hire_me")}</HashLink></li>
 					</ul>
 				</div>
 			</div>
@@ -27,4 +32,4 @@ function Footer({ t }) {
 	);
 }
 
-export default withTranslation()(Footer);
+export default Footer;

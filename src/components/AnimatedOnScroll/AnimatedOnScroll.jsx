@@ -1,4 +1,3 @@
-import React from 'react';
 import useOnScreen from '../../hooks/useOnScreen';
 import './AnimatedOnScroll.css'; // We will create this file next
 

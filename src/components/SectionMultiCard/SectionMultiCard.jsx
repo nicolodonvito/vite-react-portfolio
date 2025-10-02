@@ -1,12 +1,14 @@
-import { withTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import "./SectionMultiCard.css";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { IoChevronForward, IoGameControllerOutline, IoGlobeOutline } from "react-icons/io5";
 import { useState } from "react";
 import { IoIosInfinite } from "react-icons/io";
 import Modal from "../Modal/Modal";
 
-function SectionMultiCard({ t, id, title, subtitle, cards, className }) {
+function SectionMultiCard({ id, title, subtitle, cards, className }) {
+	const { t } = useTranslation();
+	const { lang } = useParams();
 	const [filter, setFilter] = useState("");
 	const [fade, setFade] = useState(false);
 	const [showModal, setShowModal] = useState(false);
@@ -97,13 +99,13 @@ function SectionMultiCard({ t, id, title, subtitle, cards, className }) {
 							};
 
 							return (
-								<Link to={part.buttonLink} key={index} onClick={handleCardClick}>
+								<Link to={`/${lang}${part.buttonLink}`} key={index} onClick={handleCardClick}>
 									<div className="buttonCard">
 										<div className="image">
-											<img src={part.image} alt={part.buttonName} />
+											<img src={`${part.image}`} alt={part.buttonName} />
 										</div>
 										<div className="icon">
-											<img src={part.icon} alt={part.type} />
+											<img src={`${part.icon}`} alt={part.type} />
 											<span>{t(part.type)}</span>
 										</div>
 										<div className="cardDescription">
@@ -116,7 +118,7 @@ function SectionMultiCard({ t, id, title, subtitle, cards, className }) {
 													{sortedTags.map((tag, index) => (
 														<span
 															key={index}
-															className={`tag ${tag.toLowerCase().replace(/[\s\/]+/g, "-")}`}
+															className={`tag ${tag.toLowerCase().replace(/[/\s/]+/g, "-")}`}
 														>
 															{t(tag)}
 														</span>
@@ -142,4 +144,4 @@ function SectionMultiCard({ t, id, title, subtitle, cards, className }) {
 	);
 }
 
-export default withTranslation()(SectionMultiCard);
+export default SectionMultiCard;

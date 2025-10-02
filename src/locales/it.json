@@ -8,6 +8,12 @@
 		"pages": "Pagine",
 		"language": "Lingua"
 	},
+	"seo": {
+		"homepage_title": "Nicolò Donvito - Sviluppatore Full-Stack, Game Designer, Assemblatore PC",
+		"homepage_description": "Portfolio di Nicolò Donvito, sviluppatore web full-stack, game designer e appassionato di PC building con sede nel Nord Italia.",
+		"hireme_title": "Assumi Nicolò Donvito - Sviluppo Web, Game Design, Servizi di Assemblaggio PC",
+		"hireme_description": "Esplora i servizi offerti da Nicolò Donvito, inclusi lo sviluppo web personalizzato, il game design coinvolgente e l'assemblaggio di PC su misura."
+	},
 	"home": {
 		"looking": "Sto cercando un lavoro!",
 		"click_to_contact": "Clicca qui per contattarmi",
@@ -153,8 +159,7 @@
 		},
 		"options": {
 			"game": "Sviluppo di Giochi",
-			"website": "Sviluppo di Siti Web",
-			"pc_building": "Assemblaggio PC"
+			"website": "Sviluppo di Siti Web",			"pc_building": "Assemblaggio PC"
 		},
 		"button": {
 			"send_message": "Invia Messaggio",

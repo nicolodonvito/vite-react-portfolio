@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { useTranslation } from "react-i18next";
 import { FaRegMoon } from "react-icons/fa";
 import { ImSun } from "react-icons/im";
 import { FiMenu, FiX } from "react-icons/fi"; // Import Hamburger and Close icons
+import { useParams } from 'react-router-dom';
 import "./NavbarMobile.css";
 
 function NavbarMobile({ theme, toggleTheme, handleLanguageSelect }) {
 	const [isMobileMenuOpen, setMobileMenuOpen] = useState(false); // State for mobile menu
 	const { t, i18n } = useTranslation();
+	const { lang } = useParams();
 	const [selectedLanguage, setSelectedLanguage] = useState(i18n.language); // Initialize with current language
 
 	// Toggle the mobile menu
@@ -22,9 +24,9 @@ function NavbarMobile({ theme, toggleTheme, handleLanguageSelect }) {
 	};
 
 	// Handle language change
-	const selectLanguage = (lang) => {
-		setSelectedLanguage(lang); // Update the selected language state
-		handleLanguageSelect(lang); // Trigger the actual language change function (coming from props)
+	const selectLanguage = (lng) => {
+		setSelectedLanguage(lng); // Update the selected language state
+		handleLanguageSelect(lng); // Trigger the actual language change function (coming from props)
 	};
 
 	useEffect(() => {
@@ -44,15 +46,15 @@ function NavbarMobile({ theme, toggleTheme, handleLanguageSelect }) {
 					<div className="mobile-menu-content boxed">
 						<div className="pages">
 							<h2>{t('navigation.pages')}</h2>
-							<HashLink smooth to="/" onClick={closeMobileMenu} className="menu-item">
+							<HashLink smooth to={`/${lang}/`} onClick={closeMobileMenu} className="menu-item">
 								<span>{t("navigation.home")}</span>
 								<span className="menu-arrow">→</span>
 							</HashLink>
-							<HashLink smooth to="/#projects" onClick={closeMobileMenu} className="menu-item">
+							<HashLink smooth to={`/${lang}/#projects`} onClick={closeMobileMenu} className="menu-item">
 								<span>{t("navigation.projects")}</span>
 								<span className="menu-arrow">→</span>
 							</HashLink>
-							<HashLink smooth to="/work" onClick={closeMobileMenu} className="menu-item">
+							<HashLink smooth to={`/${lang}/work`} onClick={closeMobileMenu} className="menu-item">
 								<span>{t("navigation.hire_me")}</span>
 								<span className="menu-arrow">→</span>
 							</HashLink>
