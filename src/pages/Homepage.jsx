@@ -2,6 +2,7 @@ import Hero from "../components/Hero/Hero";
 import SectionMultiCard from "../components/SectionMultiCard/SectionMultiCard";
 import SectionSplit from "../components/SectionSplit/SectionSplit";
 import AnimatedOnScroll from "../components/AnimatedOnScroll/AnimatedOnScroll";
+import { Helmet } from 'react-helmet-async';
 
 function Homepage() {
 	const educationDescription = [
@@ -52,13 +53,13 @@ function Homepage() {
 			icon: "images/LaMantiaIcon.png",
 			buttonName: "projects.cards.7.title",
 			description: "projects.cards.7.description",
-			buttonLink: "#",
-			modal: {
-				title: "projects.cards.7.title",
-				description: "projects.wip.description",
-			},
+			buttonLink: "https://lamantialuxuryrooms.com/",
+			// modal: {
+			// 	title: "projects.cards.7.title",
+			// 	description: "projects.wip.description",
+			// },
 			type: "projects.type.website",
-			tags: ["Frontend"]
+			tags: ["Frontend", "Backend"]
 		},
 		{
 			image: "images/Filangeri_BG.png",
@@ -118,6 +119,28 @@ function Homepage() {
 
 	return (
 		<div className="homepage">
+			<Helmet>
+				<script type="application/ld+json">
+					{`
+						{
+							"@context": "https://schema.org",
+							"@type": "Person",
+							"name": "Nicolò Donvito",
+							"url": "https://ndonvito.it/",
+							"sameAs": [
+								"https://www.linkedin.com/in/nicolo-donvito",
+								"https://github.com/nicolodonvito"
+							],
+							"alumniOf": "Digital Bros Game Academy",
+							"jobTitle": "Full-Stack Developer",
+							"worksFor": {
+								"@type": "Organization",
+								"name": "Freelance"
+							}
+						}
+					`}
+				</script>
+			</Helmet>
 			<Hero />
 			<AnimatedOnScroll>
 				<SectionSplit
