@@ -49,7 +49,7 @@ const workCards = [
 export default function Work() {
 	return (
 		<div>
-			<SeoHead titleKey="seo.hireme_title" descriptionKey="seo.hireme_description" />
+			<SeoHead titleKey="seo.hireme_title" descriptionKey="seo.hireme_description" keywordsKey="seo.hireme_keywords" />
 			<SectionSplitAlt
 				title="hire_me.title"
 				subtitle="hire_me.subtitle"

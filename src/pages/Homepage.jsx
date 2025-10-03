@@ -119,7 +119,7 @@ function Homepage() {
 
 	return (
 		<div className="homepage">
-			<SeoHead titleKey="seo.homepage_title" descriptionKey="seo.homepage_description" />
+			<SeoHead titleKey="seo.homepage_title" descriptionKey="seo.homepage_description" keywordsKey="seo.homepage_keywords" />
 			<Hero />
 			<AnimatedOnScroll>
 				<SectionSplit

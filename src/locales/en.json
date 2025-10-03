@@ -12,7 +12,9 @@
 		"homepage_title": "Nicolò Donvito - Full-Stack Developer, Game Designer, PC Builder",
 		"homepage_description": "Portfolio of Nicolò Donvito, a full-stack web developer, game designer, and PC building enthusiast based in Northern Italy.",
 		"hireme_title": "Hire Nicolò Donvito - Web Development, Game Design, PC Building Services",
-		"hireme_description": "Explore services offered by Nicolò Donvito, including custom web development, engaging game design, and bespoke PC building."
+		"hireme_description": "Explore services offered by Nicolò Donvito, including custom web development, engaging game design, and bespoke PC building.",
+		"homepage_keywords": "Nicolò Donvito, full-stack developer, game designer, PC builder, web developer, Northern Italy, portfolio, ReactJS, ExpressJS, MySQL, Unity, Unreal, Godot",
+		"hireme_keywords": "hire Nicolò Donvito, web development services, game design services, PC building services, custom websites, indie game development, bespoke PCs, freelance developer"
 	},
 	"home": {
 		"looking": "I am looking for a job!",

@@ -12,11 +12,15 @@ const resources = {
 	}
 };
 
+// Determine initial language from localStorage or default to 'en'
+const storedLanguage = localStorage.getItem('language');
+const initialLanguage = storedLanguage || 'en';
+
 i18n
 	.use(initReactI18next)
 	.init({
 		resources,
-		lng: 'en',
+		lng: initialLanguage, // Use the dynamically determined language
 		fallbackLng: 'en',
 		interpolation: {
 			escapeValue: false
