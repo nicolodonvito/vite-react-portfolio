@@ -128,8 +128,12 @@ body.dark .hero-right img {
 
 .secondary-btn {
 	background-color: var(--bg-1b);
-	color: var(--accent-1);
+	color: var(--text-card-title);
 	border: 2px solid var(--accent-1);
+}
+
+body .secondary-btn {
+	color: var(--text-title);
 }
 
 .secondary-btn:hover {

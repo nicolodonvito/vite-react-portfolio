@@ -9,12 +9,12 @@
 		"language": "Language"
 	},
 	"seo": {
-		"homepage_title": "Nicolò Donvito - Full-Stack Developer, Game Designer, PC Builder",
-		"homepage_description": "Portfolio of Nicolò Donvito, a full-stack web developer, game designer, and PC building enthusiast based in Northern Italy.",
-		"hireme_title": "Hire Nicolò Donvito - Web Development, Game Design, PC Building Services",
-		"hireme_description": "Explore services offered by Nicolò Donvito, including custom web development, engaging game design, and bespoke PC building.",
-		"homepage_keywords": "Nicolò Donvito, full-stack developer, game designer, PC builder, web developer, Northern Italy, portfolio, ReactJS, ExpressJS, MySQL, Unity, Unreal, Godot",
-		"hireme_keywords": "hire Nicolò Donvito, web development services, game design services, PC building services, custom websites, indie game development, bespoke PCs, freelance developer"
+		"homepage_title": "Home - Full-Stack Web Developer, Game Designer, PC Builder - Nicolò Donvito",
+		"homepage_description": "Portfolio of Nicolò Donvito, full-stack web developer, game designer, and PC building enthusiast based in Milan.",
+		"hireme_title": "Let's work together - Web Development, Game Design, PC Building Services - Nicolò Donvito",
+		"hireme_description": "Development of fully customized websites using the best available technologies, Writing documentation for indie games, and PC building on demand. If you need one of these services, you are in the right place",
+		"homepage_keywords": "Freelance web developer, full-stack web developer, game designer, PC builder, web development, Northern Italy, Milan, Bollate, Senago, Paderno Dugnano, independent, portfolio, ReactJS, ExpressJS, MySQL, Unity, Unreal, Godot, RPG, horror, adventure, Nicolò Donvito",
+		"hireme_keywords": "Freelance web development, web development services, game design services, PC building services, fully customized websites, indie game development, PC building on demand, Nicolò Donvito, affordable"
 	},
 	"home": {
 		"looking": "I am looking for a job!",
@@ -85,9 +85,9 @@
 			"pc_building": "PC building",
 			"show_all": "Show all"
 		},
-        "wip": {
-            "description": "This project is currently under development. Please check back later for more updates."
-        },
+		"wip": {
+			"description": "This project is currently under development. Please check back later for more updates."
+		},
 		"cards": {
 			"1": {
 				"title": "Tome Keeper",
