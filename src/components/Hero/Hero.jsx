@@ -59,7 +59,7 @@ function Hero() {
 				</div>
 
 				<div className="hero-right">
-					<img src="/images/pfp.jpg" alt="Nicolò Donvito's profile picture" />
+					<img src="/resources/images/pfp.jpg" alt="Nicolò Donvito's profile picture" />
 				</div>
 			</div>
 		</div>

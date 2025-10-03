@@ -1,0 +1,28 @@
+.cta-work-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  gap: 15px;
+}
+
+.cta-work-page-container h2 {
+  font-size: clamp(24px, 4vw, 36px);
+  color: var(--text-title);
+}
+
+.cta-work-page-container p {
+  max-width: 700px;
+  color: var(--text-paragraph);
+  font-size: clamp(16px, 2vw, 18px);
+}
+
+.cta-work-page-container .btn {
+  margin-top: 10px;
+}
+
+.cta-work-page-container a {
+  text-decoration: none;
+}

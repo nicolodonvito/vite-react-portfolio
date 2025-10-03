@@ -50,17 +50,31 @@
 
 .social-icons {
 	display: flex;
-	gap: 10px;
+	gap: 2rem;
 }
 
 .social-icons a {
 	color: var(--text-title);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .footer-bottom {
 	text-align: center;
 	padding-top: 20px;
 	color: var(--text-title);
+}
+
+.footer img {
+	width: 1.6rem;
+	height: 1.6rem;
+}
+
+body.dark .footer img {
+	filter: invert(1);
 }
 
 @media (max-width: 800px) {

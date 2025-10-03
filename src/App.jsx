@@ -18,25 +18,46 @@ function App() {
 		const storedLanguage = localStorage.getItem('language');
 		const systemLanguage = navigator.language.split('-')[0];
 
-		// Prioritize URL parameter 'lang'
-		if (lang && i18n.language !== lang) {
-			i18n.changeLanguage(lang);
-			localStorage.setItem('language', lang);
-		} else if (!lang && storedLanguage && i18n.language !== storedLanguage) {
-			// If no 'lang' in URL but a stored language exists, use it
-			i18n.changeLanguage(storedLanguage);
-		} else if (!lang && !storedLanguage && i18n.language !== systemLanguage) {
-			// If no 'lang' or stored language, use system language
-			i18n.changeLanguage(systemLanguage);
-			localStorage.setItem('language', systemLanguage);
+		// Determine the language that *should* be active
+		let desiredLanguage = lang;
+		if (!desiredLanguage && storedLanguage) {
+			desiredLanguage = storedLanguage;
+		} else if (!desiredLanguage && !storedLanguage) {
+			desiredLanguage = systemLanguage;
 		}
 
-		// Ensure URL reflects current i18n language if it's not already
-		if (lang !== i18n.language) {
-			navigate(`/${i18n.language}${window.location.pathname.substring(lang ? 3 : 0)}`, { replace: true });
+		// If the i18n language is different from the determined language, change it
+		if (i18n.language !== desiredLanguage) {
+			i18n.changeLanguage(desiredLanguage);
+			localStorage.setItem('language', desiredLanguage);
 		}
 
-	}, [lang, i18n, navigate]); // Add navigate to dependencies
+		// Construct the canonical path segment from the *current* URL
+		let currentPathname = window.location.pathname;
+		let pathSegment = '';
+
+		// Remove the language prefix from the pathSegment
+		// Use 'lang' from useParams to identify the language part in the current URL
+		if (lang && currentPathname.startsWith(`/${lang}`)) {
+			pathSegment = currentPathname.substring(`/${lang}`.length);
+		} else if (lang === undefined && currentPathname.startsWith('/')) {
+			pathSegment = ''; // Root path without language prefix
+		}
+
+		// Canonicalize pathSegment (remove trailing slash if not empty)
+		if (pathSegment.endsWith('/') && pathSegment.length > 0) {
+			pathSegment = pathSegment.slice(0, -1);
+		}
+
+		// Construct the ideal URL using the *desiredLanguage*
+		const idealUrl = `/${desiredLanguage}${pathSegment}`;
+
+		// Navigate if the current URL is not the ideal URL OR if i18n.language is not yet desiredLanguage
+		if (currentPathname !== idealUrl || i18n.language !== desiredLanguage) {
+			navigate(idealUrl, { replace: true });
+		}
+
+	}, [lang, i18n, navigate]); // Add i18n.language to dependencies
 
 	return (
 		<>
