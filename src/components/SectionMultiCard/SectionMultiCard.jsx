@@ -99,7 +99,7 @@ function SectionMultiCard({ id, title, subtitle, cards, className }) {
 							};
 
 							return (
-								<Link to={`/${lang}${part.buttonLink}`} key={index} onClick={handleCardClick}>
+								<Link to={`${part.buttonLink}`} key={index} onClick={handleCardClick}>
 									<div className="buttonCard">
 										<div className="image">
 											<img src={`${part.image}`} alt={part.buttonName} />

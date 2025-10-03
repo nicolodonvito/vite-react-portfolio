@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useParams } from 'react-router-dom';
 
-function SeoHead({ titleKey, descriptionKey }) {
+function SeoHead({ titleKey, descriptionKey, keywordsKey }) {
   const { t, i18n } = useTranslation();
   const { pathname } = useLocation();
   const { lang } = useParams();
@@ -15,6 +15,7 @@ function SeoHead({ titleKey, descriptionKey }) {
       <html lang={i18n.language} />
       <title>{t(titleKey)}</title>
       <meta name="description" content={t(descriptionKey)} />
+      {keywordsKey && <meta name="keywords" content={t(keywordsKey)} />}
       <link rel="canonical" href={canonicalUrl} />
       <link rel="alternate" hrefLang="en" href={currentUrl.replace(`/${lang}`, '/en')} />
       <link rel="alternate" hrefLang="it" href={currentUrl.replace(`/${lang}`, '/it')} />
