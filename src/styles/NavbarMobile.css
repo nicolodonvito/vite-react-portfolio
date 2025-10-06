@@ -1,5 +1,5 @@
 .hamburger {
-	display: flex;
+	display: none; /* Hidden by default */
 	align-items: center;
 	justify-content: center;
 	position: fixed;
@@ -17,7 +17,7 @@
 }
 
 .mobile-menu {
-	display: flex;
+	display: none; /* Hidden by default */
 	flex-direction: column;
 	position: fixed;
 	top: 0;
@@ -30,102 +30,15 @@
 	backdrop-filter: blur(15px);
 }
 
-.mobile-menu-content {
-	display: flex;
-	height: 100%;
-	width: 100%;
-	flex-direction: column;
-	padding-top: 10%;
-	gap: 50px;
-}
-
-.mobile-menu-content h2 {
-	color: var(--text-title);
-	margin-bottom: 20px;
-}
-
-.menu-item {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	color: var(--text-subtitle);
-	font-size: 1.5rem;
-	text-decoration: none;
-	background: none;
-	border: none;
-	cursor: pointer;
-	padding: 10px 0;
-}
-
-
-.menu-buttons {
-	display: flex;
-	flex-direction: column;
-	align-items: start;
-	gap: 30px;
-	width: 100%;
-}
-
-.menu-buttons button {
-	display: flex;
-	align-items: center;
-	gap: 20px;
-	border-radius: 8px;
-	padding: 14px 20px;
-}
-
-.menu-buttons h3 {
-	color: var(--white);
-	font-size: 18px;
-}
-
-.language-list {
-	display: flex;
-	align-items: flex-start;
-	gap: 12px;
-	width: 100%;
-}
-
-.language-list li {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 10px;
-	gap: 10px;
-	border-radius: 8px;
-	list-style: none;
-	background-color: var(--bg-1b);
-	border: 2px solid var(--bg-1);
-	cursor: pointer;
-	transition: all 0.3s ease;
-}
-
-.language-list li.active {
-	background-color: var(--accent-1);
-	border: 2px solid var(--accent-1-a);
-	color: var(--white);
-}
-
-.language-list li:hover {
-	border: 2px solid var(--accent-1-a);
-}
-
-.language-list span {
-	color: var(--text-title);
-	font-weight: var(--weight-title);
-}
-
-.language-list li.active span {
-	color: var(--white);
-}
-
-.language-list li img {
-	width: 42px;
-	height: 32px;
-	border-radius: 2px;
-}
-
 @media (max-width: 768px) {
+	.hamburger {
+		display: flex; /* Show on mobile */
+	}
+
+	.mobile-menu {
+		display: flex; /* Show on mobile */
+	}
+
 	.nav-left,
 	.nav-right {
 		display: none;

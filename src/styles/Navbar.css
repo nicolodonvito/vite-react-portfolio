@@ -106,7 +106,10 @@
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
+	.navbar {
+		display: none;
+	}
 
 	.language-dropdown {
 		right: -20px;

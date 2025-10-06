@@ -1,7 +1,7 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import BlogPage from './pages/BlogPage';
-import BlogPostPage from './pages/BlogPostPage';
+import Article from './pages/Article';
 import Navbar from './components/Navbar';
 import './i18n'; // Import the i18n configuration
 import Footer from './components/Footer';
@@ -17,7 +17,7 @@ function App() {
 				<Route path="/" element={<Homepage />} />
 				<Route path="/work" element={<HireMe />} />
 				<Route path="/blog" element={<BlogPage />} />
-				<Route path="/blog/:slug" element={<BlogPostPage />} />
+				<Route path="/blog/:slug" element={<Article />} />
 			</Routes>
 			<Footer />
 		</BrowserRouter>

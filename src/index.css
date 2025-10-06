@@ -45,6 +45,7 @@ body {
 
   --success: #27ae60;
   --failure: #e74c3c;
+  overflow-x: hidden;
 }
 
 body.light {
