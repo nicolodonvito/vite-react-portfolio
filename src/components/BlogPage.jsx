@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import BlogPostCard from './BlogPostCard';
-import CtaWorkPage from '../CtaWorkPage/CtaWorkPage';
-import Footer from '../Footer/Footer';
-import Navbar from '../Navbar/Navbar';
-import NavbarMobile from '../Navbar/NavbarMobile';
-import SeoHead from '../SeoHead/SeoHead';
-import '../../styles/Blog/BlogPage.css';
+import CtaWorkPage from './CtaWorkPage';
+import Footer from './Footer';
+import Navbar from './Navbar';
+import NavbarMobile from './NavbarMobile';
+import SeoHead from './SeoHead';
+
 
 const BlogPage = () => {
   const { t } = useTranslation();

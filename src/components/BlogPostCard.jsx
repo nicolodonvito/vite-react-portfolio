@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import '../../styles/Blog/BlogPostCard.css';
+
 
 const BlogPostCard = ({ post }) => {
   const { i18n } = useTranslation();

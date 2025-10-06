@@ -1,8 +1,8 @@
-import Hero from "../components/Hero/Hero";
-import SectionMultiCard from "../components/SectionMultiCard/SectionMultiCard";
-import SectionSplit from "../components/SectionSplit/SectionSplit";
-import AnimatedOnScroll from "../components/AnimatedOnScroll/AnimatedOnScroll";
-import SeoHead from '../components/SeoHead/SeoHead';
+import Hero from "../components/Hero";
+import SectionMultiCard from "../components/SectionMultiCard";
+import SectionSplit from "../components/SectionSplit";
+import AnimatedOnScroll from "../components/AnimatedOnScroll";
+import SeoHead from '../components/SeoHead';
 
 function Homepage() {
 	const educationDescription = [

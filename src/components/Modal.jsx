@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import '../../styles/Modal/Modal.css';
+
 import { IoClose } from "react-icons/io5";
 import { useEffect, useRef, useCallback } from "react";
 

@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
-import "../../styles/SectionMultiCard/SectionMultiCard.css";
+
 import { Link } from "react-router-dom";
 import { IoChevronForward, IoGameControllerOutline, IoGlobeOutline } from "react-icons/io5";
 import { useState } from "react";
 import { IoIosInfinite } from "react-icons/io";
-import Modal from "../Modal/Modal";
+import Modal from "./Modal";
 
 function SectionMultiCard({ id, title, subtitle, cards, className }) {
 	const { t } = useTranslation();

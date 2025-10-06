@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
-import CtaWorkPage from '../CtaWorkPage/CtaWorkPage';
-import Footer from '../components/Footer/Footer';
-import Navbar from '../components/Navbar/Navbar';
-import NavbarMobile from '../components/Navbar/NavbarMobile';
-import SeoHead from '../SeoHead/SeoHead';
-import '../../styles/Blog/BlogPostPage.css';
+import CtaWorkPage from './CtaWorkPage';
+import Footer from './Footer';
+import Navbar from './Navbar';
+import NavbarMobile from './NavbarMobile';
+import SeoHead from './SeoHead';
+
 
 const BlogPostPage = () => {
   const { slug } = useParams();

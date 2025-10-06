@@ -1,7 +1,7 @@
 import { FaCog } from "react-icons/fa";
 import { IoChevronForward } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
-import '../../styles/Hero/Hero.css';
+
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";

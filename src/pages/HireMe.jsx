@@ -1,10 +1,10 @@
 import { IoGameControllerOutline, IoGlobeOutline } from "react-icons/io5";
-import SectionSplitAlt from "../components/SectionSplitAlt/SectionSplitAlt";
+import SectionSplitAlt from "../components/SectionSplitAlt";
 
 import { FaCheckCircle } from "react-icons/fa"; // Example icon library
 import { RxDesktop } from "react-icons/rx";
-import ContactForm from "../components/ContactForm/ContactForm";
-import SeoHead from '../components/SeoHead/SeoHead';
+import ContactForm from "../components/ContactForm";
+import SeoHead from '../components/SeoHead';
 
 const workCards = [
 	{

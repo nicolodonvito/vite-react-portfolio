@@ -1,13 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
 import Homepage from './pages/Homepage';
-import BlogPage from './components/Blog/BlogPage';
-import BlogPostPage from './components/Blog/BlogPostPage';
-import Navbar from './components/Navbar/Navbar';
+import BlogPage from './components/BlogPage';
+import BlogPostPage from './components/BlogPostPage';
+import Navbar from './components/Navbar';
 import './i18n'; // Import the i18n configuration
-import './App.css';
-import Footer from './components/Footer/Footer';
+import Footer from './components/Footer';
 import HireMe from './pages/HireMe';
-import SeoHead from './components/SeoHead/SeoHead';
+import SeoHead from './components/SeoHead';
 
 function App() {
 	return (
