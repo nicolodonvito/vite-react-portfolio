@@ -8,36 +8,33 @@ import SeoHead from '../components/SeoHead';
 
 const workCards = [
 	{
-		title: "projects.type.games",
-		description: "hire_me.game_subtitle",
+		title: "home:projects.type.games", description: "work:hire_me.game_subtitle",
 		skills: [
-			{ name: "hire_me.services_list.gameplay_design", icon: <FaCheckCircle /> },
-			{ name: "hire_me.services_list.uiux_design", icon: <FaCheckCircle /> },
-			{ name: "hire_me.services_list.accessibility", icon: <FaCheckCircle /> },
+			{ name: "work:hire_me.services_list.gameplay_design", icon: <FaCheckCircle /> },
+			{ name: "work:hire_me.services_list.uiux_design", icon: <FaCheckCircle /> },
+			{ name: "work:hire_me.services_list.accessibility", icon: <FaCheckCircle /> },
 		],
 
 		icon: <IoGameControllerOutline size={34} /> // Main icon for "Games"
 	},
 	{
-		title: "projects.type.websites",
-		description: "hire_me.website_subtitle",
+		title: "home:projects.type.websites", description: "work:hire_me.website_subtitle",
 		skills: [
-			{ name: "hire_me.services_list.web_design", icon: <FaCheckCircle /> },
-			{ name: "hire_me.services_list.frontend", icon: <FaCheckCircle /> },
-			{ name: "hire_me.services_list.backend", icon: <FaCheckCircle /> },
-			{ name: "hire_me.services_list.hosting", icon: <FaCheckCircle /> },
-			{ name: "hire_me.services_list.assistance", icon: <FaCheckCircle /> },
+			{ name: "work:hire_me.services_list.web_design", icon: <FaCheckCircle /> },
+			{ name: "work:hire_me.services_list.frontend", icon: <FaCheckCircle /> },
+			{ name: "work:hire_me.services_list.backend", icon: <FaCheckCircle /> },
+			{ name: "work:hire_me.services_list.hosting", icon: <FaCheckCircle /> },
+			{ name: "work:hire_me.services_list.assistance", icon: <FaCheckCircle /> },
 		],
 
 		icon: <IoGlobeOutline size={34} /> // Main icon for "Websites"
 	},
 	{
-		title: "projects.type.pc_building",
-		description: "hire_me.pc_build_subtitle",
+		title: "home:projects.type.pc_building", description: "work:hire_me.pc_build_subtitle",
 		skills: [
-			{ name: "hire_me.services_list.pc_design", icon: <FaCheckCircle /> },
-			{ name: "hire_me.services_list.build", icon: <FaCheckCircle /> },
-			{ name: "hire_me.services_list.overclock", icon: <FaCheckCircle /> }
+			{ name: "work:hire_me.services_list.pc_design", icon: <FaCheckCircle /> },
+			{ name: "work:hire_me.services_list.build", icon: <FaCheckCircle /> },
+			{ name: "work:hire_me.services_list.overclock", icon: <FaCheckCircle /> }
 		],
 
 		icon: <RxDesktop size={34} /> // Main icon for "PC Builds"
@@ -49,10 +46,10 @@ const workCards = [
 export default function Work() {
 	return (
 		<div>
-			<SeoHead titleKey="seo.hireme_title" descriptionKey="seo.hireme_description" keywordsKey="seo.hireme_keywords" />
+			<SeoHead titleKey="static:seo.hireme_title" descriptionKey="static:seo.hireme_description" keywordsKey="static:seo.hireme_keywords" />
 			<SectionSplitAlt
-				title="hire_me.title"
-				subtitle="hire_me.subtitle"
+				title="work:hire_me.title"
+				subtitle="work:hire_me.subtitle"
 				workCards={workCards}
 			/>
 			<ContactForm />

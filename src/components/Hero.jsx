@@ -14,13 +14,13 @@ function Hero() {
 
 	useEffect(() => {
 		if (time >= 4 && time < 12) {
-			setGreeting(t("home.greetings.good_morning"));
+			setGreeting(t("home:home.greetings.good_morning"));
 		} else if (time >= 12 && time < 18) {
-			setGreeting(t("home.greetings.good_afternoon"));
+			setGreeting(t("home:home.greetings.good_afternoon"));
 		} else if (time >= 18 && time < 23) {
-			setGreeting(t("home.greetings.good_evening"));
+			setGreeting(t("home:home.greetings.good_evening"));
 		} else {
-			setGreeting(t("home.greetings.welcome"));
+			setGreeting(t("home:home.greetings.welcome"));
 		}
 	}, [time, t]);
 
@@ -34,8 +34,8 @@ function Hero() {
 								<FaCog />
 							</div>
 							<div className="pill-text">
-								<h3>{t("home.looking")}</h3>
-								<h6>{t("home.click_to_contact")}</h6>
+								<h3>{t("home:home.looking")}</h3>
+								<h6>{t("home:home.click_to_contact")}</h6>
 							</div>
 							<div className="pill-chevron">
 								<IoChevronForward size={32} />
@@ -44,16 +44,16 @@ function Hero() {
 					</Link>
 					<div className="intro">
 						<h1>{greeting}!</h1>
-						<h1>{t("home.i_am")} Nicolò</h1>
+						<h1>{t("home:home.i_am")} Nicolò</h1>
 					</div>
-					<p>{t("home.introduction")}</p>
+					<p>{t("home:home.introduction")}</p>
 
 					<div className="cta-buttons">
 						<HashLink smooth to={`/#projects`} className="btn primary-btn">
-							{t("home.cta_projects")}
+							{t("home:home.cta_projects")}
 						</HashLink>
 						<HashLink smooth to={`/#more`} className="btn secondary-btn">
-							{t("home.cta_more")}
+							{t("home:home.cta_more")}
 						</HashLink>
 					</div>
 				</div>

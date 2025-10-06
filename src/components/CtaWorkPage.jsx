@@ -9,10 +9,10 @@ function CtaWorkPage() {
 
   return (
     <div className="cta-work-page-container">
-      <h2>{t("home.cta_section_title")}</h2>
-      <p>{t("home.cta_section_description")}</p>
+      <h2>{t("home:home.cta_section_title")}</h2>
+      <p>{t("home:home.cta_section_description")}</p>
       <HashLink smooth to={`/${lang}/work`} className="btn primary-btn">
-        {t("home.cta_work_page")}
+        {t("home:home.cta_work_page")}
       </HashLink>
     </div>
   );

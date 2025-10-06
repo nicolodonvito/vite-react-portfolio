@@ -1,7 +1,7 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Homepage from './pages/Homepage';
-import BlogPage from './components/BlogPage';
-import BlogPostPage from './components/BlogPostPage';
+import BlogPage from './pages/BlogPage';
+import BlogPostPage from './pages/BlogPostPage';
 import Navbar from './components/Navbar';
 import './i18n'; // Import the i18n configuration
 import Footer from './components/Footer';
@@ -10,8 +10,8 @@ import SeoHead from './components/SeoHead';
 
 function App() {
 	return (
-		<>
-			<SeoHead titleKey="seo.homepage_title" descriptionKey="seo.homepage_description" />
+		<BrowserRouter>
+			<SeoHead titleKey="static:seo.homepage_title" descriptionKey="static:seo.homepage_description" />
 			<Navbar />
 			<Routes>
 				<Route path="/" element={<Homepage />} />
@@ -20,7 +20,7 @@ function App() {
 				<Route path="/blog/:slug" element={<BlogPostPage />} />
 			</Routes>
 			<Footer />
-		</>
+		</BrowserRouter>
 	);
 }
 

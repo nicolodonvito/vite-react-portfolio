@@ -1,0 +1,25 @@
+{
+	"navigation": {
+		"home": "Home",
+		"projects": "Projects",
+		"hire_me": "Let's work together",
+		"dark_mode": "Switch to dark mode",
+		"light_mode": "Switch to light mode",
+		"pages": "Pages",
+		"language": "Language",
+		"blog": "Blog"
+	},
+	"seo": {
+		"homepage_title": "Home - Full-Stack Web Developer, Game Designer, PC Builder - Nicolò Donvito",
+		"homepage_description": "Portfolio of Nicolò Donvito, full-stack web developer, game designer, and PC building enthusiast based in Milan.",
+		"hireme_title": "Let's work together - Web Development, Game Design, PC Building Services - Nicolò Donvito",
+		"hireme_description": "Development of fully customized websites using the best available technologies, Writing documentation for indie games, and PC building on demand. If you need one of these services, you are in the right place",
+		"homepage_keywords": "Freelance web development, web development services, game design services, PC building services, fully customized websites, indie game development, PC building on demand, Nicolò Donvito, affordable"
+	},
+	"footer": {
+		"copyright": "Nicolò Donvito - All rights reserved",
+		"about": "Portfolio v4.1",
+		"changelog": "Change log",
+		"links": "Pages"
+	}
+}

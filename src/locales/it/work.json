@@ -1,0 +1,50 @@
+{
+	"hire_me": {
+		"title": "Lavoriamo insieme",
+		"subtitle": "Offro diversi servizi, tra cui design di videogiochi, sviluppo di siti web e assemblaggio di PC. Ogni mio lavoro è trattato con amore per garantire la miglior qualità possibile. Se stai cercando un collaboratore per progetti in rev-share, sei un datore di lavoro, o ti serve un sito, sarò più che felice di conoscerti!",
+		"game_subtitle": "Creazione di giochi indie coinvolgenti, attraverso meccaniche e interfacce intuitive.",
+		"website_subtitle": "Progettazione, sviluppo e pubblicazione di siti web per privati e piccole aziende.",
+		"pc_build_subtitle": "Computer fissi personalizzati per ogni budget ed esigenza.",
+		"services": "Servizi",
+		"services_list": {
+			"gameplay_design": "Gameplay Design",
+			"uiux_design": "UI/UX Design",
+			"accessibility": "Controllo dell'accessibilità",
+			"web_design": "Web Design",
+			"frontend": "Sviluppo Frontend",
+			"backend": "Sviluppo Backend",
+			"hosting": "Pubblicazione e hosting",
+			"assistance": "Assistenza sul sito e modifiche illimitate",
+			"pc_design": "Progettazione PC",
+			"build": "Assemblaggio",
+			"overclock": "Overclocking"
+		}
+	},
+	"contact_form": {
+		"title": "Contattami",
+		"labels": {
+			"name": "Nome",
+			"email": "Email",
+			"service": "Tipo di Servizio",
+			"message": "Messaggio"
+		},
+		"placeholders": {
+			"name": "Inserisci il tuo nome",
+			"email": "Inserisci la tua email",
+			"message": "Inserisci il tuo messaggio"
+		},
+		"options": {
+			"game": "Sviluppo di Giochi",
+			"website": "Sviluppo di Siti Web",
+			"pc_building": "Assemblaggio PC"
+		},
+		"button": {
+			"send_message": "Invia Messaggio",
+			"sending": "Invio in corso..."
+		},
+		"feedback": {
+			"success": "Messaggio inviato con successo!",
+			"failure": "Il tuo messaggio non è stato inviato, riprova."
+		}
+	}
+}

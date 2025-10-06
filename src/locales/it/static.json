@@ -1,0 +1,26 @@
+{
+	"navigation": {
+		"home": "Home",
+		"projects": "Progetti",
+		"hire_me": "Lavoriamo insieme",
+		"dark_mode": "Passa alla modalità scura",
+		"light_mode": "Passa alla modalità chiara",
+		"pages": "Pagine",
+		"language": "Lingua",
+		"blog": "Blog"
+	},
+	"seo": {
+		"homepage_title": "Home - Sviluppatore Full-Stack, Game Designer, Assemblaggio PC - Nicolò Donvito",
+		"homepage_description": "Portfolio di Nicolò Donvito, sviluppatore web full-stack, game designer e appassionato di PC building con sede a Milano.",
+		"hireme_title": "Lavoriamo insieme - Sviluppo Web, Game Design, Servizi di Assemblaggio PC - Nicolò Donvito",
+		"hireme_description": "Sviluppo siti web completamente personalizzati utilizzando le migliori tecnologie a disposizione, Scrivo documentazione per videogiochi indie e assemblo PC su misura. Se hai bisogno di uno di questi servizi, sei nel posto giusto",
+		"homepage_keywords": "Sviluppatore web freelance, sviluppatore full-stack, game designer, assemblatore PC, sviluppatore web, Nord Italia, Milano, Bollate, Senago, Paderno Dugnano, indipendente, portfolio, ReactJS, ExpressJS, MySQL, Unity, Unreal, Godot, RPG, horror, adventure, Nicolò Donvito",
+		"hireme_keywords": "Sviluppatore web freelance, servizi di sviluppo web, servizi di game design, servizi di assemblaggio PC, siti web personalizzati, sviluppo giochi indie, PC su misura, Nicolò Donvito, economico"
+	},
+	"footer": {
+		"copyright": "Nicolò Donvito - Tutti i diritti sono riservati",
+		"about": "Portfolio v4.1",
+		"changelog": "Lista dei cambiamenti",
+		"links": "Pagine"
+	}
+}

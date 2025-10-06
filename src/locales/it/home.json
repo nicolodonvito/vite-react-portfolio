@@ -1,0 +1,107 @@
+{
+	"home": {
+		"looking": "Sto cercando un lavoro!",
+		"click_to_contact": "Clicca qui per contattarmi",
+		"greetings": {
+			"good_morning": "Buongiorno",
+			"good_afternoon": "Buon pomeriggio",
+			"good_evening": "Buona sera",
+			"welcome": "Benvenuti"
+		},
+		"i_am": "Mi chiamo",
+		"introduction": "Sono uno sviluppatore web full-stack, web designer, game designer, e per ultimo, ma non per importanza, un appassionato di PC building. Vivo in Nord Italia, ma mi piacerebbe esplorare il mondo.",
+		"cta_projects": "Guarda i miei progetti",
+		"cta_more": "Scopri di più",
+		"cta_work_page": "Lavoriamo insieme",
+		"cta_section_title": "Convinto?",
+		"cta_section_description": "",
+		"misc": {
+			"place_remote": "Remoto",
+			"place_milan": "Milano, Italia",
+			"ongoing": "In corso"
+		}
+	},
+	"education": {
+		"education": "Percorso di Studi",
+		"description": {
+			"part_1": "Quando ero ancora un bambino, mio padre portò a casa uno dei primi iMac e mi incuriosii subito.",
+			"part_2": "Mentre imparavo a installare giochi e software, ho imparato da solo l'inglese poiché la maggior parte delle risorse erano in inglese. Nel frattempo sono diventato quella persona su cui contare quando i loro dispositivi non funzionavano.",
+			"part_3": "Questa passione mi ha portato a intraprendere il percorso informatico in una delle poche scuole superiori specializzate in questo settore nella mia zona.",
+			"part_4": "Durante il mio ultimo anno di scuola, ho iniziato a costruire siti web e successivamente mi sono iscritto a un corso di Game Design dove ho acquisito le competenze necessarie per dare vita alle mie idee di gioco."
+		},
+		"cards": {
+			"1": {
+				"edu_title": "Digital Bros Game Academy",
+				"edu_hook": "Corso professionale di Game Design",
+				"edu_description": "Studio di questa branca dello sviluppo di videogiochi, tra cui Gameplay design, UI/UX, Level design, e fondamenti di narrativa"
+			},
+			"2": {
+				"edu_title": "IIS Lagrange",
+				"edu_hook": "Istituto Tecnico ad indirizzo Informatico",
+				"edu_description": "Studio di reti, stack base per il web, C, Java, Assembly 8086, PHP, e MySQL e alcuni fondamenti di visual scripting"
+			}
+		}
+	},
+	"projects": {
+		"projects": "Progetti",
+		"subtitle": "Ecco a voi tutti i progetti a cui ho lavorato, la lista comprende progetti accademici e non",
+		"type": {
+			"game": "Gioco",
+			"website": "Sito web",
+			"pc_build": "PC assemblato",
+			"games": "Giochi",
+			"websites": "Siti web",
+			"pc_building": "Assemblaggio PC",
+			"show_all": "Mostra tutto"
+		},
+		"wip": {
+			"description": "Questo progetto è attualmente in fase di sviluppo. Si prega di controllare più tardi per ulteriori aggiornamenti."
+		},
+		"cards": {
+			"1": {
+				"title": "Tome Keeper",
+				"description": "Simulatore di pulizie in una biblioteca infestata"
+			},
+			"2": {
+				"title": "Monsters Mess",
+				"description": "Match-3 in un mondo Pokémon distopico"
+			},
+			"3": {
+				"title": "Astralia",
+				"description": "Battle royale corpo a corpo in un mondo che si rimpicciolisce"
+			},
+			"4": {
+				"title": "Casa Adele",
+				"description": "Casa vacanze a Tremosine sul Garda"
+			},
+			"5": {
+				"title": "Filangeri Milano",
+				"description": "Profumeria Artistica e Pelletteria a Milano"
+			},
+			"6": {
+				"title": "Pulizie A2E",
+				"description": "Impresa di pulizie che opera a Milano e provincia"
+			},
+			"7": {
+				"title": "La Mantia Luxury Rooms",
+				"description": "Casa vacanze nel centro di Palermo"
+			}
+		}
+	},
+	"work": {
+		"work": "Lavoro",
+		"description": {
+			"part_1": "Da quando ho iniziato a scrivere siti web a scuola, non mi sono mai fermato.",
+			"part_2": "Dopo aver ottenuto l'attestato di Game Design, ho migliorato le mie conoscenze sui principali game engine come Unity, Unreal e attualmente sto usando Godot.",
+			"part_3": "Uno dei miei difetti è che lavoro un po' lentamente, anche se questo di solito si traduce in un lavoro di qualità superiore e, alla fine, in una maggiore soddisfazione da parte dei miei clienti e dei membri dei miei team.",
+			"part_4": "Inoltre progetto e costruisco PC personalizzati, al momento ne ho assemblati con successo oltre 10 per me, amici e clienti."
+		},
+		"cards": {
+			"1": {
+				"work_title": "Sviluppatore Web Full-Stack",
+				"work_hook": "Sviluppatore e web designer freelance",
+				"work_description": "Programmazione e design di frontend e backend di siti web usando ReactJS, ExpressJS e MySQL."
+			}
+		}
+	}
+}

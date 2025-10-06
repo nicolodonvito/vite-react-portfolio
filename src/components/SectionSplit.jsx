@@ -16,9 +16,7 @@ function SectionSplit({ title, id, subtitle, splitLeft, splitRight, splitTitle1,
 						{splitTitle1 && <><h2>{t(splitTitle1)}</h2><br /></>}
 
 
-						{description && description.map((part, index) =>
-							<p key={index}>{t(part)}</p>
-						)}
+						{description && description.map((part, index) => <p key={index}>{t(part)}</p>)}
 					</div>
 					}
 					{splitRight && <div className="section-right">
@@ -26,7 +24,7 @@ function SectionSplit({ title, id, subtitle, splitLeft, splitRight, splitTitle1,
 						{card && card.map((part, index) =>
 							<div className="card" key={index}>
 								<h3>{t(part.title)}</h3>
-								<h4>{t(part.place)} | {part.yearStart} - {part.yearEnd ? part.yearEnd : t('home.misc.ongoing')}</h4>
+								<h4>{t(part.place)} | {part.yearStart} - {part.yearEnd ? part.yearEnd : t('home:home.misc.ongoing')}</h4>
 								<br />
 								<h5>{t(part.hook)}</h5>
 								<p>{t(part.description)}</p>

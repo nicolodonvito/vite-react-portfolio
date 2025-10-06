@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
-import BlogPostCard from './BlogPostCard';
-import CtaWorkPage from './CtaWorkPage';
-import Footer from './Footer';
-import Navbar from './Navbar';
-import NavbarMobile from './NavbarMobile';
-import SeoHead from './SeoHead';
+import BlogPostCard from '../components/BlogPostCard';
+import CtaWorkPage from '../components/CtaWorkPage';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+import NavbarMobile from '../components/NavbarMobile';
+import SeoHead from '../components/SeoHead';
 
 
 const BlogPage = () => {
@@ -45,11 +45,11 @@ const BlogPage = () => {
   return (
     <>
       <SeoHead
-        title={t('blogPage.metaTitle')}
-        description={t('blogPage.metaDescription')}
-        keywords={t('blogPage.metaKeywords')}
-        ogTitle={t('blogPage.ogTitle')}
-        ogDescription={t('blogPage.ogDescription')}
+        title={t('blog:blogPage.metaTitle')}
+        description={t('blog:blogPage.metaDescription')}
+        keywords={t('blog:blogPage.metaKeywords')}
+        ogTitle={t('blog:blogPage.ogTitle')}
+        ogDescription={t('blog:blogPage.ogDescription')}
         ogUrl="https://www.ndonvito.it/blog"
       />
       <Helmet>
@@ -60,7 +60,8 @@ const BlogPage = () => {
       <main>
         <section className="blog-posts-section">
           <div className="container">
-            <h1>{t('blogPage.title')}</h1>
+            <h1>{t('blog:blogPage.title')}</h1>
+            <p className="blog-page-description">{t('blog:blogPage.description')}</p>
             <div className="blog-posts-grid">
               {posts.map((post) => (
                 <BlogPostCard key={post.id} post={post} />

@@ -77,13 +77,13 @@ function Navbar() {
 			<nav className="navbar">
 				<div className="boxed">
 					<div className="nav-left">
-						<HashLink smooth to={`/`}>{t("navigation.home")}</HashLink>
-						<HashLink smooth to={`/#projects`}>{t("navigation.projects")}</HashLink>
-						<HashLink smooth to={`/work`}>{t("navigation.hire_me")}</HashLink>
-						<HashLink smooth to={`/blog`}>{t("navigation.blog")}</HashLink>
+						<HashLink smooth to={`/`}>{t("static:navigation.home")}</HashLink>
+						<HashLink smooth to={`/#projects`}>{t("static:navigation.projects")}</HashLink>
+						<HashLink smooth to={`/work`}>{t("static:navigation.hire_me")}</HashLink>
+						<HashLink smooth to={`/blog`}>{t("static:navigation.blog")}</HashLink>
 					</div>
 					<div className="nav-right">
-						<button onClick={toggleTheme} title={theme === 'light' ? t('navigation.dark_mode') : t('navigation.light_mode')}>
+						<button onClick={toggleTheme} title={theme === 'light' ? t('static:navigation.dark_mode') : t('static:navigation.light_mode')}>
 							{theme === 'light' ? <FaRegMoon size={24} /> : <ImSun size={24} />}
 						</button>
 						<div className="language-menu">

@@ -45,21 +45,21 @@ function NavbarMobile({ theme, toggleTheme, handleLanguageSelect }) {
 				<div className="mobile-menu ">
 					<div className="mobile-menu-content boxed">
 						<div className="pages">
-							<h2>{t('navigation.pages')}</h2>
+							<h2>{t('static:navigation.pages')}</h2>
 							<HashLink smooth to={`/${lang}/`} onClick={closeMobileMenu} className="menu-item">
-								<span>{t("navigation.home")}</span>
+								<span>{t("static:navigation.home")}</span>
 								<span className="menu-arrow">→</span>
 							</HashLink>
 							<HashLink smooth to={`/${lang}/#projects`} onClick={closeMobileMenu} className="menu-item">
-								<span>{t("navigation.projects")}</span>
+								<span>{t("static:navigation.projects")}</span>
 								<span className="menu-arrow">→</span>
 							</HashLink>
 							<HashLink smooth to={`/${lang}/work`} onClick={closeMobileMenu} className="menu-item">
-								<span>{t("navigation.hire_me")}</span>
+								<span>{t("static:navigation.hire_me")}</span>
 								<span className="menu-arrow">→</span>
 							</HashLink>
 							<HashLink smooth to={`/${lang}/blog`} onClick={closeMobileMenu} className="menu-item">
-								<span>{t("navigation.blog")}</span>
+								<span>{t("static:navigation.blog")}</span>
 								<span className="menu-arrow">→</span>
 							</HashLink>
 
@@ -70,28 +70,28 @@ function NavbarMobile({ theme, toggleTheme, handleLanguageSelect }) {
 
 
 							<div className="language">
-								<h2>{t('navigation.language')}</h2>
+								<h2>{t('static:navigation.language')}</h2>
 								<div className="language-list">
 									<li
 										onClick={() => selectLanguage('en')}
 										className={selectedLanguage === 'en' ? 'active' : ''}
 									>
-										<img src="/images/English.png" alt="English" />
+										<img src="/resources/images/English.png" alt="English" />
 										<span>English</span>
 									</li>
 									<li
 										onClick={() => selectLanguage('it')}
 										className={selectedLanguage === 'it' ? 'active' : ''}
 									>
-										<img src="/images/Italian.png" alt="Italian" />
+										<img src="/resources/images/Italian.png" alt="Italian" />
 										<span>Italiano</span>
 									</li>
 								</div>
 							</div>
 							{/* Theme Toggle */}
-							<button onClick={toggleTheme} title={theme === 'light' ? t('navigation.dark_mode') : t('navigation.light_mode')}>
+							<button onClick={toggleTheme} title={theme === 'light' ? t('static:navigation.dark_mode') : t('static:navigation.light_mode')}>
 								{theme === 'light' ? <FaRegMoon size={24} /> : <ImSun size={24} />}
-								<h3>{theme === 'light' ? t('navigation.dark_mode') : t('navigation.light_mode')}</h3>
+								<h3>{theme === 'light' ? t('static:navigation.dark_mode') : t('static:navigation.light_mode')}</h3>
 							</button>
 						</div>
 					</div>

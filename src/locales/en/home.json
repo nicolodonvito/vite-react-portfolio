@@ -1,22 +1,4 @@
 {
-	"navigation": {
-		"home": "Home",
-		"projects": "Projects",
-		"hire_me": "Let's work together",
-		"dark_mode": "Switch to dark mode",
-		"light_mode": "Switch to light mode",
-		"pages": "Pages",
-		"language": "Language",
-		"blog": "Blog"
-	},
-	"seo": {
-		"homepage_title": "Home - Full-Stack Web Developer, Game Designer, PC Builder - Nicolò Donvito",
-		"homepage_description": "Portfolio of Nicolò Donvito, full-stack web developer, game designer, and PC building enthusiast based in Milan.",
-		"hireme_title": "Let's work together - Web Development, Game Design, PC Building Services - Nicolò Donvito",
-		"hireme_description": "Development of fully customized websites using the best available technologies, Writing documentation for indie games, and PC building on demand. If you need one of these services, you are in the right place",
-		"homepage_keywords": "Freelance web developer, full-stack web developer, game designer, PC builder, web development, Northern Italy, Milan, Bollate, Senago, Paderno Dugnano, independent, portfolio, ReactJS, ExpressJS, MySQL, Unity, Unreal, Godot, RPG, horror, adventure, Nicolò Donvito",
-		"hireme_keywords": "Freelance web development, web development services, game design services, PC building services, fully customized websites, indie game development, PC building on demand, Nicolò Donvito, affordable"
-	},
 	"home": {
 		"looking": "I am looking for a job!",
 		"click_to_contact": "Click here to contact me",
@@ -85,7 +67,6 @@
 			"pc_build": "PC build",
 			"games": "Games",
 			"websites": "Websites",
-			"pc_builds": "PC builds",
 			"pc_building": "PC building",
 			"show_all": "Show all"
 		},
@@ -121,60 +102,6 @@
 				"title": "La Mantia Luxury Rooms",
 				"description": "Holiday house in the center of Palermo, Italy"
 			}
-		}
-	},
-	"footer": {
-		"copyright": "Nicolò Donvito - All rights reserved",
-		"about": "Portfolio v4.1",
-		"changelog": "Change log",
-		"links": "Pages"
-	},
-	"hire_me": {
-		"title": "Let's work together",
-		"subtitle": "I offer various services, including game design, website development, and PC building. Each of my works is treated with love to ensure the best possible quality. If you are looking for a collaborator for rev-share projects, are an employer, or need a website, I would be more than happy to meet you!",
-		"game_subtitle": "Creating engaging indie games through intuitive mechanics and interfaces.",
-		"website_subtitle": "Designing, developing, and publishing websites for individuals and small businesses.",
-		"pc_build_subtitle": "Custom-built desktop computers for every budget and need.",
-		"services": "Services",
-		"services_list": {
-			"gameplay_design": "Gameplay Design",
-			"uiux_design": "UI/UX Design",
-			"accessibility": "Accessibility review",
-			"web_design": "Web Design",
-			"frontend": "Frontend Development",
-			"backend": "Backend Development",
-			"hosting": "Publishing and hosting",
-			"assistance": "Site assistance and unlimited edits",
-			"pc_design": "PC Design",
-			"build": "Assembly",
-			"overclock": "Overclocking"
-		}
-	},
-	"contact_form": {
-		"title": "Contact me",
-		"labels": {
-			"name": "Name",
-			"email": "Email",
-			"service": "Service Type",
-			"message": "Message"
-		},
-		"placeholders": {
-			"name": "Enter your name",
-			"email": "Enter your email",
-			"message": "Enter your message"
-		},
-		"options": {
-			"game": "Game Development",
-			"website": "Website Development",
-			"pc_building": "PC Building"
-		},
-		"button": {
-			"send_message": "Send Message",
-			"sending": "Sending..."
-		},
-		"feedback": {
-			"success": "Message sent successfully!",
-			"failure": "Your message could not be sent, please try again."
 		}
 	}
 }

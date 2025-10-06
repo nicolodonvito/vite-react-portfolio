@@ -52,22 +52,22 @@ function SectionMultiCard({ id, title, subtitle, cards, className }) {
 								className={filter === "" ? "active" : ""}
 							>
 								<IoIosInfinite size={22} />
-								<h3>{t("projects.type.show_all")}</h3>
+								<h3>{t("home:projects.type.show_all")}</h3>
 							</button>
 							<div className="separator" />
 							<button
 								onClick={() => handleFilterClick("projects.type.game")}
-								className={filter === "projects.type.game" ? "active" : ""}
+								className={filter === "home:projects.type.game" ? "active" : ""}
 							>
 								<IoGameControllerOutline size={24} />
-								<h3>{t("projects.type.games")}</h3>
+								<h3>{t("home:projects.type.games")}</h3>
 							</button>
 							<button
 								onClick={() => handleFilterClick("projects.type.website")}
-								className={filter === "projects.type.website" ? "active" : ""}
+								className={filter === "home:projects.type.website" ? "active" : ""}
 							>
 								<IoGlobeOutline size={24} />
-								<h3>{t("projects.type.websites")}</h3>
+								<h3>{t("home:projects.type.websites")}</h3>
 							</button>
 						</div>
 					</div>

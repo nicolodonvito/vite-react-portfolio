@@ -42,11 +42,11 @@ const ContactForm = () => {
 			'Mx19ujhyRS-X4vh6R'
 		)
 			.then(() => {
-				setFeedback(t('contact_form.feedback.success'));
+				setFeedback(t('work:contact_form.feedback.success'));
 				setSendStatus("success");
 				setFormData({ name: '', email: '', service: 'game', message: '' });
 			}, () => {
-				setFeedback(t('contact_form.feedback.failure'));
+				setFeedback(t('work:contact_form.feedback.failure'));
 				setSendStatus("failure");
 			})
 			.finally(() => {
@@ -64,11 +64,11 @@ const ContactForm = () => {
 
 	return (
 		<div className="contact-form-container boxed">
-			<h2>{t('contact_form.title')}</h2>
+			<h2>{t('work:contact_form.title')}</h2>
 			<form onSubmit={sendEmail} className="split-form">
 				<div className="left-section">
 					<div className="form-group">
-						<label htmlFor="name">{t('contact_form.labels.name')}</label>
+						<label htmlFor="name">{t('work:contact_form.labels.name')}</label>
 						<input
 							type="text"
 							id="name"
@@ -76,11 +76,11 @@ const ContactForm = () => {
 							value={formData.name}
 							onChange={handleChange}
 							required
-							placeholder={t('contact_form.placeholders.name')}
+							placeholder={t('work:contact_form.placeholders.name')}
 						/>
 					</div>
 					<div className="form-group">
-						<label htmlFor="email">{t('contact_form.labels.email')}</label>
+						<label htmlFor="email">{t('work:contact_form.labels.email')}</label>
 						<input
 							type="email"
 							id="email"
@@ -88,11 +88,11 @@ const ContactForm = () => {
 							value={formData.email}
 							onChange={handleChange}
 							required
-							placeholder={t('contact_form.placeholders.email')}
+							placeholder={t('work:contact_form.placeholders.email')}
 						/>
 					</div>
 					<div className="form-group">
-						<label htmlFor="service">{t('contact_form.labels.service')}</label>
+						<label htmlFor="service">{t('work:contact_form.labels.service')}</label>
 						<select
 							id="service"
 							name="service"
@@ -100,29 +100,29 @@ const ContactForm = () => {
 							onChange={handleChange}
 							required
 						>
-							<option value="game">{t('contact_form.options.game')}</option>
-							<option value="website">{t('contact_form.options.website')}</option>
-							<option value="pc_building">{t('contact_form.options.pc_building')}</option>
+							<option value="game">{t('work:contact_form.options.game')}</option>
+							<option value="website">{t('work:contact_form.options.website')}</option>
+							<option value="pc_building">{t('work:contact_form.options.pc_building')}</option>
 						</select>
 					</div>
 				</div>
 
 				<div className="right-section">
 					<div className="form-group">
-						<label htmlFor="message">{t('contact_form.labels.message')}</label>
+						<label htmlFor="message">{t('work:contact_form.labels.message')}</label>
 						<textarea
 							id="message"
 							name="message"
 							value={formData.message}
 							onChange={handleChange}
 							required
-							placeholder={t('contact_form.placeholders.message')}
+							placeholder={t('work:contact_form.placeholders.message')}
 						/>
 					</div>
 					<div className="form-submit-container">
 						<button type="submit" disabled={isSending}>
 							{isSending && <FaSpinner className="loading-spinner" />}
-							{isSending ? t('contact_form.button.sending') : t('contact_form.button.send_message')}
+							{isSending ? t('work:contact_form.button.sending') : t('work:contact_form.button.send_message')}
 						</button>
 					</div>
 				</div>

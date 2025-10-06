@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
-import CtaWorkPage from './CtaWorkPage';
-import Footer from './Footer';
-import Navbar from './Navbar';
-import NavbarMobile from './NavbarMobile';
-import SeoHead from './SeoHead';
+import CtaWorkPage from '../components/CtaWorkPage';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+import NavbarMobile from '../components/NavbarMobile';
+import SeoHead from '../components/SeoHead';
 
 
 const BlogPostPage = () => {
@@ -72,7 +72,7 @@ const BlogPostPage = () => {
       <SeoHead
         title={getPostTitle()}
         description={post.excerpt.rendered.replace(/<[^>]*>?/gm, '')}
-        keywords={t('blogPage.metaKeywords')}
+        keywords={t('blog:blogPage.metaKeywords')}
         ogTitle={getPostTitle()}
         ogDescription={post.excerpt.rendered.replace(/<[^>]*>?/gm, '')}
         ogUrl={`https://www.ndonvito.it/blog/${post.slug}`}

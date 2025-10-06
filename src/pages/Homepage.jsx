@@ -6,44 +6,43 @@ import SeoHead from '../components/SeoHead';
 
 function Homepage() {
 	const educationDescription = [
-		'education.description.part_1',
-		'education.description.part_2',
-		'education.description.part_3',
-		'education.description.part_4',
+		'home:education.description.part_1',
+		'home:education.description.part_2',
+		'home:education.description.part_3',
+		'home:education.description.part_4',
 	];
 
 	const educationCards = [
 		{
-			title: "education.cards.1.edu_title",
-			place: "home.misc.place_milan",
+			place: "home:home.misc.place_milan",
 			yearStart: "2021",
 			yearEnd: "2022",
-			hook: "education.cards.1.edu_hook",
-			description: "education.cards.1.edu_description",
+			hook: "home:education.cards.1.edu_hook",
+			description: "home:education.cards.1.edu_description",
 		},
 		{
-			title: "education.cards.2.edu_title",
-			place: "home.misc.place_milan",
+			title: "home:education.cards.2.edu_title",
+			place: "home:home.misc.place_milan",
 			yearStart: "2015",
 			yearEnd: "2020",
-			hook: "education.cards.2.edu_hook",
-			description: "education.cards.2.edu_description",
+			hook: "home:education.cards.2.edu_hook",
+			description: "home:education.cards.2.edu_description",
 		}
 	];
 
 	const workDescription = [
-		'work.description.part_2',
-		'work.description.part_3',
-		'work.description.part_4',
+		'home:work.description.part_2',
+		'home:work.description.part_3',
+		'home:work.description.part_4',
 	];
 
 	const workCards = [
 		{
-			title: "work.cards.1.work_title",
-			place: "home.misc.place_remote",
+			title: "home:work.cards.1.work_title",
+			place: "home:home.misc.place_remote",
 			yearStart: "2020",
-			hook: "work.cards.1.work_hook",
-			description: "work.cards.1.work_description",
+			hook: "home:work.cards.1.work_hook",
+			description: "home:work.cards.1.work_description",
 		},
 	]
 
@@ -51,79 +50,79 @@ function Homepage() {
 		{
 			image: "/resources/images/LaMantia_BG.jpg",
 			icon: "/resources/images/LaMantiaIcon.png",
-			buttonName: "projects.cards.7.title",
-			description: "projects.cards.7.description",
+			buttonName: "home:projects.cards.7.title",
+			description: "home:projects.cards.7.description",
 			buttonLink: "https://lamantialuxuryrooms.com/",
 			// modal: {
 			// 	title: "projects.cards.7.title",
 			// 	description: "projects.wip.description",
 			// },
-			type: "projects.type.website",
+			type: "home:projects.type.website",
 			tags: ["Frontend", "Backend"]
 		},
 		{
 			image: "/resources/images/Filangeri_BG.png",
 			icon: "/resources/images/FilangeriIcon.png",
-			buttonName: "projects.cards.5.title",
-			description: "projects.cards.5.description",
+			buttonName: "home:projects.cards.5.title",
+			description: "home:projects.cards.5.description",
 			buttonLink: "https://web.archive.org/web/20250605115322/https://filangeri.com/",
-			type: "projects.type.website",
+			type: "home:projects.type.website",
 			tags: ["Frontend"]
 		},
 		{
 			image: "/resources/images/CasaAdele_BG.png",
 			icon: "/resources/images/CasaAdeleIcon.png",
-			buttonName: "projects.cards.4.title",
-			description: "projects.cards.4.description",
+			buttonName: "home:projects.cards.4.title",
+			description: "home:projects.cards.4.description",
 			buttonLink: "https://casaadele.com/",
-			type: "projects.type.website",
+			type: "home:projects.type.website",
 			tags: ["Frontend"]
 		},
 		{
 			image: "/resources/images/PulizieA2E_BG.png",
 			icon: "/resources/images/PulizieA2EIcon.png",
-			buttonName: "projects.cards.6.title",
-			description: "projects.cards.6.description",
+			buttonName: "home:projects.cards.6.title",
+			description: "home:projects.cards.6.description",
 			buttonLink: "https://puliziea2e.it/",
-			type: "projects.type.website",
+			type: "home:projects.type.website",
 			tags: ["Frontend"]
 		},
 		{
 			image: "/resources/images/Astralia_BG.png",
 			icon: "/resources/images/AstraliaIcon.png",
-			buttonName: "projects.cards.3.title",
-			description: "projects.cards.3.description",
+			buttonName: "home:projects.cards.3.title",
+			description: "home:projects.cards.3.description",
 			buttonLink: "https://docs.google.com/document/d/1_BuYlM4wVRQ-zlkSw1UCKRex1ci1vnG2wlv5RTdCv8I/edit?usp=sharing",
-			type: "projects.type.game",
+			type: "home:projects.type.game",
 			tags: ["UI/UX", "Gameplay"]
 		},
 		{
 			image: "/resources/images/Monsters_Mess_BG.png",
 			icon: "/resources/images/MonstersMessIcon.png",
-			buttonName: "projects.cards.2.title",
-			description: "projects.cards.2.description",
+			buttonName: "home:projects.cards.2.title",
+			description: "home:projects.cards.2.description",
 			buttonLink: "https://docs.google.com/document/d/1shtIf0YjyuVf7SkV_J-5BVxPq4NBPLiRH7c4HC_Hgk4/edit?usp=sharing",
-			type: "projects.type.game",
+			type: "home:projects.type.game",
 			tags: ["UI/UX", "Gameplay"]
 		},
 		{
 			image: "/resources/images/Tome_Keeper_BG.png",
 			icon: "/resources/images/TomeKeeperIcon.png",
-			buttonName: "projects.cards.1.title",
-			description: "projects.cards.1.description",
+			buttonName: "home:projects.cards.1.title",
+			description: "home:projects.cards.1.description",
 			buttonLink: "https://docs.google.com/document/d/1GCUSwcsbxRGPv06KjOwNpOus3teM1LRgJJTtlRd3Zds/edit?usp=sharing",
-			type: "projects.type.game",
+			type: "home:projects.type.game",
 			tags: ["Level", "UI/UX", "Gameplay"]
 		},
 	]
 
 	return (
 		<div className="homepage">
-			<SeoHead titleKey="seo.homepage_title" descriptionKey="seo.homepage_description" keywordsKey="seo.homepage_keywords" />
+			<SeoHead titleKey="static:seo.homepage_title" descriptionKey="static:seo.homepage_description" keywordsKey="static:seo.homepage_keywords" />
 			<Hero />
 			<AnimatedOnScroll>
 				<SectionSplit
-					title="education.education"
+					title="home:education.education"
 					id="more"
 					splitLeft
 					splitRight
@@ -133,7 +132,7 @@ function Homepage() {
 			</AnimatedOnScroll>
 			<AnimatedOnScroll>
 				<SectionSplit
-					title="work.work"
+					title="home:work.work"
 					splitLeft
 					splitRight
 					isSplitReversed
@@ -142,14 +141,11 @@ function Homepage() {
 				/>
 			</AnimatedOnScroll>
 			<SectionMultiCard
-				title="projects.projects"
+				title="home:projects.projects"
 				id="projects"
 				cards={projectCard}
 				buttonLink="/projects"
 			/>
-			{/* <AnimatedOnScroll>
-				<CtaWorkPage />
-			</AnimatedOnScroll> */}
 		</div>
 	);
 }

@@ -1,0 +1,50 @@
+{
+	"hire_me": {
+		"title": "Let's work together",
+		"subtitle": "I offer various services, including game design, website development, and PC building. Each of my works is treated with love to ensure the best possible quality. If you are looking for a collaborator for rev-share projects, are an employer, or need a website, I would be more than happy to meet you!",
+		"game_subtitle": "Creating engaging indie games through intuitive mechanics and interfaces.",
+		"website_subtitle": "Designing, developing, and publishing websites for individuals and small businesses.",
+		"pc_build_subtitle": "Custom-built desktop computers for every budget and need.",
+		"services": "Services",
+		"services_list": {
+			"gameplay_design": "Gameplay Design",
+			"uiux_design": "UI/UX Design",
+			"accessibility": "Accessibility review",
+			"web_design": "Web Design",
+			"frontend": "Frontend Development",
+			"backend": "Backend Development",
+			"hosting": "Publishing and hosting",
+			"assistance": "Site assistance and unlimited edits",
+			"pc_design": "PC Design",
+			"build": "Assembly",
+			"overclock": "Overclocking"
+		}
+	},
+	"contact_form": {
+		"title": "Contact me",
+		"labels": {
+			"name": "Name",
+			"email": "Email",
+			"service": "Service Type",
+			"message": "Message"
+		},
+		"placeholders": {
+			"name": "Enter your name",
+			"email": "Enter your email",
+			"message": "Enter your message"
+		},
+		"options": {
+			"game": "Game Development",
+			"website": "Website Development",
+			"pc_building": "PC Building"
+		},
+		"button": {
+			"send_message": "Send Message",
+			"sending": "Sending..."
+		},
+		"feedback": {
+			"success": "Message sent successfully!",
+			"failure": "Your message could not be sent, please try again."
+		}
+	}
+}
