@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { FaRegMoon } from "react-icons/fa";
 import { ImSun } from "react-icons/im";
 import { FaGlobeAmericas } from "react-icons/fa";
-import { useLocation, useNavigate, useParams } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import NavbarMobile from './NavbarMobile'; // Import the mobile navbar
 import "./Navbar.css";
 
@@ -12,7 +12,7 @@ function Navbar() {
 	const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
 	const { pathname } = useLocation();
 	const navigate = useNavigate();
-	const { lang } = useParams();
+
 	const [isLanguageMenuOpen, setLanguageMenuOpen] = useState(false);
 	const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // State for screen size
 	const { t, i18n } = useTranslation();
@@ -33,7 +33,7 @@ function Navbar() {
 		localStorage.setItem('language', lng);
 		setSelectedLanguage(lng); // Set the selected language
 		setLanguageMenuOpen(false);
-		navigate(`/${lng}${pathname.substring(3)}`); // Navigate to the new language path
+		navigate(pathname); // Navigate to the new language path
 	};
 
 	useEffect(() => {
@@ -77,9 +77,9 @@ function Navbar() {
 			<nav className="navbar">
 				<div className="boxed">
 					<div className="nav-left">
-						<HashLink smooth to={`/${lang}/`}>{t("navigation.home")}</HashLink>
-						<HashLink smooth to={`/${lang}/#projects`}>{t("navigation.projects")}</HashLink>
-						<HashLink smooth to={`/${lang}/work`}>{t("navigation.hire_me")}</HashLink>
+						<HashLink smooth to={`/`}>{t("navigation.home")}</HashLink>
+						<HashLink smooth to={`/#projects`}>{t("navigation.projects")}</HashLink>
+						<HashLink smooth to={`/work`}>{t("navigation.hire_me")}</HashLink>
 					</div>
 					<div className="nav-right">
 						<button onClick={toggleTheme} title={theme === 'light' ? t('navigation.dark_mode') : t('navigation.light_mode')}>
@@ -91,11 +91,11 @@ function Navbar() {
 							</button>
 							<ul className={`language-dropdown ${isLanguageMenuOpen ? 'active' : ''}`}>
 								<li onClick={() => handleLanguageSelect('en')} className={selectedLanguage === 'en' ? 'active' : ''}>
-									<img src="/images/English.png" alt="English" />
+									<img src="/resources/images/English.png" alt="English" />
 									<span>English</span>
 								</li>
 								<li onClick={() => handleLanguageSelect('it')} className={selectedLanguage === 'it' ? 'active' : ''}>
-									<img src="/images/Italian.png" alt="Italian" />
+									<img src="/resources/images/Italian.png" alt="Italian" />
 									<span>Italiano</span>
 								</li>
 							</ul>

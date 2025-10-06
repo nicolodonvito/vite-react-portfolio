@@ -3,12 +3,12 @@ import { IoChevronForward } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
 import "./Hero.css";
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 function Hero() {
 	const { t } = useTranslation();
-	const { lang } = useParams();
+
 	const time = new Date().getHours();
 	const [greeting, setGreeting] = useState("");
 
@@ -28,7 +28,7 @@ function Hero() {
 		<div className="hero">
 			<div className="hero-content boxed">
 				<div className="hero-left">
-					<Link to={`/${lang}/work`} className="pill">
+					<Link to={`/work`} className="pill">
 						<div className="pill-cta">
 							<div className="icon">
 								<FaCog />
@@ -49,10 +49,10 @@ function Hero() {
 					<p>{t("home.introduction")}</p>
 
 					<div className="cta-buttons">
-						<HashLink smooth to={`/${lang}/#projects`} className="btn primary-btn">
+						<HashLink smooth to={`/#projects`} className="btn primary-btn">
 							{t("home.cta_projects")}
 						</HashLink>
-						<HashLink smooth to={`/${lang}/#more`} className="btn secondary-btn">
+						<HashLink smooth to={`/#more`} className="btn secondary-btn">
 							{t("home.cta_more")}
 						</HashLink>
 					</div>
