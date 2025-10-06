@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import "./Footer.css";
+import '../../styles/Footer/Footer.css';
 import { HashLink } from 'react-router-hash-link';
 
 import { Link } from "react-router-dom";

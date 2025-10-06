@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import "./SectionSplitAlt.css";
+import '../../styles/SectionSplitAlt/SectionSplitAlt.css';
 
 function SectionSplitAlt({ title, subtitle, workCards }) {
 	const { t } = useTranslation();

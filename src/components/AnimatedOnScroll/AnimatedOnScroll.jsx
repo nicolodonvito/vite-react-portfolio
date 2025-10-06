@@ -1,5 +1,5 @@
 import useOnScreen from '../../hooks/useOnScreen';
-import './AnimatedOnScroll.css'; // We will create this file next
+import '../../styles/AnimatedOnScroll/AnimatedOnScroll.css'; // We will create this file next
 
 const AnimatedOnScroll = ({ children, appearThreshold = 0.04, disappearThreshold = 0 }) => {
   const [ref, isVisible] = useOnScreen({ appearThreshold, disappearThreshold });

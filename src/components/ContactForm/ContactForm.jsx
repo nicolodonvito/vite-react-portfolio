@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { FaSpinner } from 'react-icons/fa'; // Import react-icons spinner
 import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
-import "./ContactForm.css";
+import '../../styles/ContactForm/ContactForm.css';
 
 const ContactForm = () => {
 	const { t } = useTranslation();

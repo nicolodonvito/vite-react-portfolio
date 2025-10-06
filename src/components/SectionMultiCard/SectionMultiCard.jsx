@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import "./SectionMultiCard.css";
+import "../../styles/SectionMultiCard/SectionMultiCard.css";
 import { Link } from "react-router-dom";
 import { IoChevronForward, IoGameControllerOutline, IoGlobeOutline } from "react-icons/io5";
 import { useState } from "react";

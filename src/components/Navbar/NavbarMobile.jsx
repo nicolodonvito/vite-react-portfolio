@@ -5,7 +5,7 @@ import { FaRegMoon } from "react-icons/fa";
 import { ImSun } from "react-icons/im";
 import { FiMenu, FiX } from "react-icons/fi"; // Import Hamburger and Close icons
 import { useParams } from 'react-router-dom';
-import "./NavbarMobile.css";
+import "../../styles/Navbar/NavbarMobile.css";
 
 function NavbarMobile({ theme, toggleTheme, handleLanguageSelect }) {
 	const [isMobileMenuOpen, setMobileMenuOpen] = useState(false); // State for mobile menu

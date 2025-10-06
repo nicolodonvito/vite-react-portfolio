@@ -6,7 +6,7 @@ import { ImSun } from "react-icons/im";
 import { FaGlobeAmericas } from "react-icons/fa";
 import { useLocation, useNavigate } from 'react-router-dom';
 import NavbarMobile from './NavbarMobile'; // Import the mobile navbar
-import "./Navbar.css";
+import "../../styles/Navbar/Navbar.css";
 
 function Navbar() {
 	const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');

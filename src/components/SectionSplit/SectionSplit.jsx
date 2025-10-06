@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import "./SectionSplit.css"
+import '../../styles/SectionSplit/SectionSplit.css';
 
 function SectionSplit({ title, id, subtitle, splitLeft, splitRight, splitTitle1, splitTitle2, description, card, isSplitReversed }) {
 	const { t } = useTranslation();

@@ -1,7 +1,7 @@
 import { HashLink } from 'react-router-hash-link';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import './CtaWorkPage.css'; // Import the new CSS file
+import '../../styles/CtaWorkPage/CtaWorkPage.css'; // Import the new CSS file
 
 function CtaWorkPage() {
   const { lang } = useParams();
