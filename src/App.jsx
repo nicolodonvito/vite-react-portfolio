@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Homepage from './pages/Homepage';
-import BlogPage from './pages/BlogPage';
-import BlogPostPage from './pages/BlogPostPage';
+import BlogPage from './components/Blog/BlogPage';
+import BlogPostPage from './components/Blog/BlogPostPage';
 import Navbar from './components/Navbar/Navbar';
 import './i18n'; // Import the i18n configuration
 import './App.css';
