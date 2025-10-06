@@ -5,6 +5,7 @@ export default function useOnScreen({ appearThreshold = 0, disappearThreshold = 
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    const currentRef = ref.current; // Capture ref.current
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.intersectionRatio >= appearThreshold) {
         setIsVisible(true);
@@ -13,13 +14,13 @@ export default function useOnScreen({ appearThreshold = 0, disappearThreshold = 
       }
     }, { threshold: [disappearThreshold, appearThreshold] });
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, [ref, appearThreshold, disappearThreshold]);

@@ -6,7 +6,8 @@
 		"dark_mode": "Switch to dark mode",
 		"light_mode": "Switch to light mode",
 		"pages": "Pages",
-		"language": "Language"
+		"language": "Language",
+		"blog": "Blog"
 	},
 	"seo": {
 		"homepage_title": "Home - Full-Stack Web Developer, Game Designer, PC Builder - Nicolò Donvito",

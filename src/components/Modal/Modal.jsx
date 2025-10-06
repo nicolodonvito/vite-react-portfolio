@@ -1,17 +1,17 @@
 import { useTranslation } from "react-i18next";
 import "./Modal.css";
 import { IoClose } from "react-icons/io5";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useCallback } from "react";
 
 function Modal({ show, onClose, title, children }) {
 	const { t } = useTranslation();
 	const modalRef = useRef();
 
-	const handleBackdropClick = (e) => {
+	const handleBackdropClick = useCallback((e) => {
 		if (modalRef.current && !modalRef.current.contains(e.target)) {
 			onClose();
 		}
-	};
+	}, [onClose]);
 
 	useEffect(() => {
 		if (show) {
@@ -23,7 +23,7 @@ function Modal({ show, onClose, title, children }) {
 		return () => {
 			document.removeEventListener("mousedown", handleBackdropClick);
 		};
-	}, [show, onClose, handleBackdropClick]);
+	}, [show, handleBackdropClick]);
 
 	if (!show) {
 		return null;

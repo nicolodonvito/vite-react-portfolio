@@ -3,7 +3,6 @@ import SectionMultiCard from "../components/SectionMultiCard/SectionMultiCard";
 import SectionSplit from "../components/SectionSplit/SectionSplit";
 import AnimatedOnScroll from "../components/AnimatedOnScroll/AnimatedOnScroll";
 import SeoHead from '../components/SeoHead/SeoHead';
-import CtaWorkPage from '../components/CtaWorkPage/CtaWorkPage';
 
 function Homepage() {
 	const educationDescription = [

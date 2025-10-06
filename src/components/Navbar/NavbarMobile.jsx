@@ -58,6 +58,10 @@ function NavbarMobile({ theme, toggleTheme, handleLanguageSelect }) {
 								<span>{t("navigation.hire_me")}</span>
 								<span className="menu-arrow">→</span>
 							</HashLink>
+							<HashLink smooth to={`/${lang}/blog`} onClick={closeMobileMenu} className="menu-item">
+								<span>{t("navigation.blog")}</span>
+								<span className="menu-arrow">→</span>
+							</HashLink>
 
 						</div>
 

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import "./SectionMultiCard.css";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { IoChevronForward, IoGameControllerOutline, IoGlobeOutline } from "react-icons/io5";
 import { useState } from "react";
 import { IoIosInfinite } from "react-icons/io";
@@ -8,7 +8,6 @@ import Modal from "../Modal/Modal";
 
 function SectionMultiCard({ id, title, subtitle, cards, className }) {
 	const { t } = useTranslation();
-	const { lang } = useParams();
 	const [filter, setFilter] = useState("");
 	const [fade, setFade] = useState(false);
 	const [showModal, setShowModal] = useState(false);

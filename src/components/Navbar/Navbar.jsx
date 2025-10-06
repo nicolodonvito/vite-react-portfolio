@@ -80,6 +80,7 @@ function Navbar() {
 						<HashLink smooth to={`/`}>{t("navigation.home")}</HashLink>
 						<HashLink smooth to={`/#projects`}>{t("navigation.projects")}</HashLink>
 						<HashLink smooth to={`/work`}>{t("navigation.hire_me")}</HashLink>
+						<HashLink smooth to={`/blog`}>{t("navigation.blog")}</HashLink>
 					</div>
 					<div className="nav-right">
 						<button onClick={toggleTheme} title={theme === 'light' ? t('navigation.dark_mode') : t('navigation.light_mode')}>
