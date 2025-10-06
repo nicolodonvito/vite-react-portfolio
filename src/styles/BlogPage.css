@@ -10,20 +10,20 @@
 
 .blog-posts-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 20px;
 }
 
 /* Media Queries (Medium Devices) */
 @media screen and (max-width: 1024px) {
   .blog-posts-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   }
 }
 
 /* Media Queries (Small Devices) */
 @media screen and (max-width: 600px) {
   .blog-posts-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   }
 }

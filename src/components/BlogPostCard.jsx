@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { IoChevronForward } from "react-icons/io5";
 
 
 const BlogPostCard = ({ post }) => {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const currentLang = i18n.language;
 
   const getFeaturedImage = () => {
@@ -32,20 +33,31 @@ const BlogPostCard = ({ post }) => {
   const excerpt = getPostExcerpt();
 
   return (
-    <div className="blog-post-card">
-      {featuredImage && (
-        <div className="blog-post-card-image">
-          <img src={featuredImage} alt={title} />
+    <Link to={`/blog/${post.slug}`}>
+      <div className="buttonCard">
+        {featuredImage && (
+          <div className="image">
+            <img src={featuredImage} alt={title} />
+          </div>
+        )}
+        <div className="icon">
+          {/* Placeholder for icon if needed, or remove if not applicable to blog posts */}
+          <span>{t('blog:blogPostCard.type')}</span> {/* Example: "Blog Post" */}
         </div>
-      )}
-      <div className="blog-post-card-content">
-        <h3>{title}</h3>
-        <div dangerouslySetInnerHTML={{ __html: excerpt }} />
-        <Link to={`/blog/${post.slug}`} className="read-more-button">
-          Read More
-        </Link>
+        <div className="cardDescription">
+          <div className="description">
+            <div>
+              <h3>{title}</h3>
+              <div dangerouslySetInnerHTML={{ __html: excerpt }} />
+            </div>
+            <div className="tags">
+              {/* Placeholder for tags if needed, or remove if not applicable to blog posts */}
+            </div>
+          </div>
+          <IoChevronForward size={42} className="chevron" />
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

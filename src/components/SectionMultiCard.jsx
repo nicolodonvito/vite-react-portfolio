@@ -56,19 +56,18 @@ function SectionMultiCard({ id, title, subtitle, cards, className }) {
 							</button>
 							<div className="separator" />
 							<button
-								onClick={() => handleFilterClick("projects.type.game")}
+								onClick={() => handleFilterClick("home:projects.type.game")}
 								className={filter === "home:projects.type.game" ? "active" : ""}
 							>
 								<IoGameControllerOutline size={24} />
 								<h3>{t("home:projects.type.games")}</h3>
 							</button>
 							<button
-								onClick={() => handleFilterClick("projects.type.website")}
+								onClick={() => handleFilterClick("home:projects.type.website")}
 								className={filter === "home:projects.type.website" ? "active" : ""}
 							>
 								<IoGlobeOutline size={24} />
-								<h3>{t("home:projects.type.websites")}</h3>
-							</button>
+								<h3>{t("home:projects.type.websites")}</h3>							</button>
 						</div>
 					</div>
 				</div>

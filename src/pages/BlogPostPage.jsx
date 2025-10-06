@@ -77,26 +77,17 @@ const BlogPostPage = () => {
         ogDescription={post.excerpt.rendered.replace(/<[^>]*>?/gm, '')}
         ogUrl={`https://www.ndonvito.it/blog/${post.slug}`}
       />
-      <Helmet>
-        <link rel="canonical" href={`https://www.ndonvito.it/blog/${post.slug}`} />
-      </Helmet>
-      <Navbar />
-      <NavbarMobile />
-      <main>
-        <section className="blog-post-detail-section">
-          <div className="container">
-            {featuredImage && (
-              <div className="blog-post-featured-image">
-                <img src={featuredImage} alt={getPostTitle()} />
-              </div>
-            )}
-            <h1>{getPostTitle()}</h1>
-            <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: getPostContent() }} />
-          </div>
-        </section>
-        <CtaWorkPage />
-      </main>
-      <Footer />
+      <section className="blog-post-detail-section">
+        <div className="container">
+          {featuredImage && (
+            <div className="blog-post-featured-image">
+              <img src={featuredImage} alt={getPostTitle()} />
+            </div>
+          )}
+          <h1>{getPostTitle()}</h1>
+          <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: getPostContent() }} />
+        </div>
+      </section>
     </>
   );
 };
